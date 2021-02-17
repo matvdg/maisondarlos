@@ -6,3 +6,13 @@ font-weight: light;
 margin-top: 0px;
 margin-bottom: 1px;
 }
+
+/* wallpaper */
+
+.wallpaper {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
+}
