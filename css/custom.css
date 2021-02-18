@@ -9,10 +9,39 @@ margin-bottom: 1px;
 
 /* wallpaper */
 
-.wallpaper {
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    min-width: 100%;
-    min-height: 100%;
+.wrap {
+    position: relative;
+}
+
+.wrap .wallpaper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrap .wallpaper.first-slide {
+    background-image: url(/assets/bg.jpg);
+}
+
+.wrap .wallpaper.second-slide {
+    background-image: url(/assets/bg2.jpg);
+}
+
+.wrap .wallpaper-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: hsla(0, 0% , 0%, 0.5);
+}
+
+.wrap .body {
+    position: relative;
+    z-index: 100;
 }
