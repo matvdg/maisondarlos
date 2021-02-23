@@ -160,13 +160,13 @@
         var map = new mapkit.Map("map");
         
         // Setting properties on creation:
-        var homeAnnotation = new MarkerAnnotation(home, { color: "#f4a56d", title: "Chez Anna & Mathieu", glyphImage: { 1: "assets/logo.png" } });
+        var homeAnnotation = new MarkerAnnotation(home, { color: "#26406D", title: "Chez Anna & Mathieu", glyphImage: { 1: "assets/logo.png" } });
         
         // Add and show both annotations on the map
         map.showItems([homeAnnotation]);
         
         // Drop an annotation where a Shift-click is detected:
-        map.mapType = Hybrid
+        map.mapType = mapkit.Map.MapTypes.Hybrid
         map.element.addEventListener("click", function(event) {
             if(!event.shiftKey) {
                 return;
