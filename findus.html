@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>Accueil - Maison d'Arlos</title>
+    <title>Nous trouver - Maison d'Arlos</title>
     <meta property="og:title" content="Maison d'Arlos" />
     <meta name="twitter:title" content="Maison d'Arlos" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -17,16 +17,6 @@
         .slides { font-family: 'Inter', sans-serif; }
     </style>
     <link href="/css/custom.css" rel="stylesheet" type="text/css"> 
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BTN2X08VSN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BTN2X08VSN');
-</script>
 </head>
 <body class="slides animated noPreload">
 <svg id="customSvgLibrary" xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -91,20 +81,12 @@
 	677.73,637.37 433.12,61.8 35.98,996.26 830.26,996.26 684.97,654.39 "></polygon>
 </symbol></svg>
 
-<!-- Navigation -->
-<nav class="side ">
-  <div class="navigation default">
-    <ul></ul>
-  </div>
-</nav>
-
 <!-- Panel Top -->
 <nav class="panel top">
   <div class="sections desktop">
     <div class="left"><a href="/home" title="Slides Framework"><svg style="width:82px;height:24px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a></div>
     <div class="right">
       <ul class="menu trim">
-        <li><a href="/findus">Nous trouver</a></li>
         <li><a href="/wip">Nos chambres d'hôtes</a></li>
         <li><a href="/wip">Notre table d'hôte</a></li>
         <li><a href="/wip">Arlos</a></li>
@@ -127,7 +109,6 @@
   <div class="content">
     <a href="/home" class="logo"><svg width="100" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a>
     <ul class="mainMenu margin-top-3">
-      <li><a href="/findus">Nous trouver</a></li>
       <li><a href="/wip">Nos chambres d'hôtes</a></li>
       <li><a href="/wip">Notre table d'hôte</a></li>
       <li><a href="/wip">Arlos</a></li>
@@ -146,7 +127,8 @@
     </ul>
   </div>
 </nav>
-<!-- Slide 1 -->
+
+<!-- Slide -->
 <section class="slide fade-6 kenBurns">
   <div class="content">
     <div class="container">
@@ -159,44 +141,66 @@
           </div>
           <div>
             <h1>
-            Chez Anna &amp; Mathieu
+            Nous trouver
            </h1>
             <h3>
-            Maison d'hôtes écoresponsable à Arlos
+            Revenez très vite ! 
            </h3>
+           <div id="map"></div>
+        
+        <script>
+        
+        var MarkerAnnotation = mapkit.MarkerAnnotation,
+            clickAnnotation;
+        var home = new mapkit.Coordinate(42.893374, 0.699890);
+        
+        mapkit.init({
+            authorizationCallback: function(done) {
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", "/services/jwt");
+                xhr.addEventListener("load", function() {
+                    done(this.responseText);
+                });
+                xhr.send();
+            }
+        });
+        var map = new mapkit.Map("map");
+        
+        // Setting properties on creation:
+        var homeAnnotation = new MarkerAnnotation(sfo, { color: "#f4a56d", title: "home", glyphText: "✈️" });
+        
+        // Setting properties after creation:
+        var workAnnotation = new MarkerAnnotation(work);
+        workAnnotation.color = "#969696"; 
+        workAnnotation.title = "Work";
+        workAnnotation.subtitle = "Chez Anna & Mathieu";
+        workAnnotation.selected = "true";
+        workAnnotation.glyphText = "";
+        
+        // Add and show both annotations on the map
+        map.showItems([homeAnnotation]);
+        
+        // Drop an annotation where a Shift-click is detected:
+        map.element.addEventListener("click", function(event) {
+            if(!event.shiftKey) {
+                return;
+            }
+        
+            if(clickAnnotation) {
+                map.removeAnnotation(clickAnnotation);
+            }
+        
+            var coordinate = map.convertPointOnPageToCoordinate(new DOMPoint(event.pageX, event.pageY));
+            clickAnnotation = new MarkerAnnotation(coordinate, {
+                title: "Click!",
+                color: "#c969e0"
+            });
+            map.addAnnotation(clickAnnotation);
+        });
+        
+        </script>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Slide 2 -->
-<section class="slide fade-6 kenBurns" data-name="news">
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-        <div class="wallpaper second-slide"></div>
-        <div class="wallpaper-overlay"></div>
-        <div class="body">
-        <div class="fix-7-12">
-          <div class="fix-3-12">
-            <svg height="77" class="wide ae-1 fromCenter"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>
-          </div>
-          <p class="larger light margin-top-2 ae-2"><span class="opacity-8">Inscrivez-vous pour avoir de nos nouvelles</span></p>
-          <div class="margin-top-3">
-            <form name="mailing-list" class="slides-form" data-netlify="true" action="/">
-              <input type="hidden" name="mailing-list" value="mailing-list">
-              <input type="email" class="rounded input-8 ae-4 fromCenter" name="email" placeholder="Adresse email"/>
-              <button type="submit" class="button green rounded ae-7 fromCenter" name="button">OK</button>
-            </form>
-            <p class="large margin-top-3 cropBottom ae-3"><span class="opacity-8">Nous arrivons <b>bientôt</b> à Arlos !</span></p>
-            <h3>
-              Ouverture prévue juillet 2021
-             </h3>
-          </div>
-        </div>
-      </div>
       </div>
     </div>
   </div>
