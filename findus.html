@@ -17,6 +17,7 @@
         .slides { font-family: 'Inter', sans-serif; }
     </style>
     <link href="/css/custom.css" rel="stylesheet" type="text/css"> 
+    <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
 </head>
 <body class="slides animated noPreload">
 <svg id="customSvgLibrary" xmlns="http://www.w3.org/2000/svg" style="display:none">
@@ -155,27 +156,14 @@
         var home = new mapkit.Coordinate(42.893374, 0.699890);
         
         mapkit.init({
-            authorizationCallback: function(done) {
-                var xhr = new XMLHttpRequest();
-                xhr.open("GET", "/services/jwt");
-                xhr.addEventListener("load", function() {
-                    done(this.responseText);
-                });
-                xhr.send();
-            }
-        });
+    authorizationCallback: function(done) {
+        done('eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkxZRlM2Q1gzOTMifQ.eyJpc3MiOiIzV0FRRjNBUzgyIiwiaWF0IjoxNjE0MDkzMDc1LCJleHAiOjE4OTUzMjUwNzUsIm9yaWdpbiI6Imh0dHBzOi8vbWFpc29uZGFybG9zLmZyIn0.Z_-KFV8cGAVNYJlE5JBkLcG7rxYAsgGTugKZ1iG_AF0yCuFUxbi7Ccwenm0XNQHSGilq-JVs06bL7J4hn2LJsg');
+    }
+});
         var map = new mapkit.Map("map");
         
         // Setting properties on creation:
-        var homeAnnotation = new MarkerAnnotation(sfo, { color: "#f4a56d", title: "home", glyphText: "✈️" });
-        
-        // Setting properties after creation:
-        var workAnnotation = new MarkerAnnotation(work);
-        workAnnotation.color = "#969696"; 
-        workAnnotation.title = "Work";
-        workAnnotation.subtitle = "Chez Anna & Mathieu";
-        workAnnotation.selected = "true";
-        workAnnotation.glyphText = "";
+        var homeAnnotation = new MarkerAnnotation(sfo, { color: "#f4a56d", title: "home", glyphImage: { 1: "assets/logo.png" } });
         
         // Add and show both annotations on the map
         map.showItems([homeAnnotation]);
