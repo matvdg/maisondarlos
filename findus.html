@@ -141,6 +141,7 @@
             <svg height="77" class="wide ae-1 fromCenter"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>
           </div>
           <div>
+            <h1> Nous trouver </h1>
             <p>
               8 La Lano de Dessus, 31440 ARLOS, Haute-Garonne, Occitanie, France
             </p>
@@ -165,8 +166,13 @@
         // Add and show both annotations on the map
         map.showItems([homeAnnotation]);
         
+        // Configure mapView
+        //map.mapType = mapkit.Map.MapTypes.Hybrid
+        var span = new mapkit.CoordinateSpan(0.016, 0.016),
+          region = new mapkit.CoordinateRegion(home, span);
+        map.region = region
+
         // Drop an annotation where a Shift-click is detected:
-        map.mapType = mapkit.Map.MapTypes.Hybrid
         map.element.addEventListener("click", function(event) {
             if(!event.shiftKey) {
                 return;
