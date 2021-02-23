@@ -141,12 +141,9 @@
             <svg height="77" class="wide ae-1 fromCenter"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg>
           </div>
           <div>
-            <h1>
-            Nous trouver
-           </h1>
-            <h3>
-            Revenez très vite ! 
-           </h3>
+            <p>
+              8 La Lano de Dessus, 31440 ARLOS, Haute-Garonne, Occitanie, France
+            </p>
            <div id="map"></div>
         
         <script>
@@ -163,12 +160,13 @@
         var map = new mapkit.Map("map");
         
         // Setting properties on creation:
-        var homeAnnotation = new MarkerAnnotation(home, { color: "#f4a56d", title: "home", glyphImage: { 1: "assets/logo.png" } });
+        var homeAnnotation = new MarkerAnnotation(home, { color: "#f4a56d", title: "Chez Anna & Mathieu", glyphImage: { 1: "assets/logo.png" } });
         
         // Add and show both annotations on the map
         map.showItems([homeAnnotation]);
         
         // Drop an annotation where a Shift-click is detected:
+        map.mapType = Hybrid
         map.element.addEventListener("click", function(event) {
             if(!event.shiftKey) {
                 return;
@@ -180,8 +178,8 @@
         
             var coordinate = map.convertPointOnPageToCoordinate(new DOMPoint(event.pageX, event.pageY));
             clickAnnotation = new MarkerAnnotation(coordinate, {
-                title: "Click!",
-                color: "#c969e0"
+                title: "Maison d'Arlos",
+                color: "#26406D"
             });
             map.addAnnotation(clickAnnotation);
         });
