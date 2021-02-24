@@ -26,23 +26,3 @@ map.showItems([homeAnnotation]);
 var span = new mapkit.CoordinateSpan(0.16, 0.16),
   region = new mapkit.CoordinateRegion(home, span);
 map.region = region;
-
-// Drop an annotation where a Shift-click is detected:
-map.element.addEventListener("click", function (event) {
-  if (!event.shiftKey) {
-    return;
-  }
-
-  if (clickAnnotation) {
-    map.removeAnnotation(clickAnnotation);
-  }
-
-  var coordinate = map.convertPointOnPageToCoordinate(
-    new DOMPoint(event.pageX, event.pageY)
-  );
-  clickAnnotation = new MarkerAnnotation(coordinate, {
-    title: "Maison d'Arlos",
-    color: "#26406D",
-  });
-  map.addAnnotation(clickAnnotation);
-});
