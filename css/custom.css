@@ -52,6 +52,7 @@ h3 {
   height: 600px;
   margin-left: -10%;
   margin-right: -10%;
-  margin-bottom: 50pt;
-  border-radius: 5pt;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  overflow: hidden;
 }
