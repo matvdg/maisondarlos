@@ -115,6 +115,12 @@ nav.panel.bottom {
     shape-outside: none;
     margin: 0 auto 20px;
   }
+
+  a[href^="mailto"] span.material-icons,
+  a[href^="tel"] span.material-icons {
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
 }
 
 ul.our-values {
@@ -129,10 +135,4 @@ a[href^="mailto"],
 a[href^="tel"] {
   display: flex;
   align-items: center;
-}
-
-a[href^="mailto"] span.material-icons,
-a[href^="tel"] span.material-icons {
-  display: inline-block;
-  margin-right: 0.5rem;
 }
