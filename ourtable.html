@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <title>Accueil - Maison d'Arlos</title>
+  <title>Notre table d'hôtes - Maison d'Arlos</title>
   <meta name="keywords"
     content="maison, hote, écoresponsable, arlos, pyrénées, haute-garonne, occitanie, gite, chambre, table, bio, local, randonnée, rando, val d'aran">
   <meta property="og:title" content="Maison d'Arlos" />
@@ -17,29 +17,14 @@
   <!-- Fonts and Material Icons -->
   <link rel="stylesheet" as="font"
     href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Material+Icons&display=swap" />
-  <style>
-    .slides {
-      font-family: 'Inter', sans-serif;
-    }
-  </style>
   <link href="/css/custom.css" rel="stylesheet" type="text/css">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BTN2X08VSN"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-BTN2X08VSN');
-  </script>
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/assets/logo.png">
 </head>
 
 <body class="slides animated noPreload">
+
   <svg id="customSvgLibrary" xmlns="http://www.w3.org/2000/svg" style="display:none">
     <symbol id="close" viewBox="0 0 30 30">
       <path
@@ -185,13 +170,6 @@
     </symbol>
   </svg>
 
-  <!-- Navigation -->
-  <nav class="side ">
-    <div class="navigation default">
-      <ul></ul>
-    </div>
-  </nav>
-
   <!-- Panel Top -->
   <nav class="panel top">
     <div class="sections desktop">
@@ -257,75 +235,119 @@
         <li><a href="tel:+33768333386"><span class="material-icons">phone</span> (+33) 07 68 33 33 86</a></li>
       </ul>
       <ul class="social opacity-8">
-        <li><a href="http://facebook.com/maisondarlos"><svg>
+        <li><a target="_blank" href="http://facebook.com/maisondarlos"><svg>
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use>
             </svg></a></li>
-        <li><a href="http://twitter.com/matmatvdg"><svg>
+        <li><a target="_blank" href="http://twitter.com/matmatvdg"><svg>
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use>
             </svg></a></li>
-        <li><a href="http://instagram.com/maisondarlos"><svg>
+        <li><a target="_blank" href="http://instagram.com/maisondarlos"><svg>
               <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use>
             </svg></a></li>
       </ul>
     </div>
   </nav>
-  <!-- Slide 1 -->
+
+  <!-- Slide -->
   <section class="slide fade-6 kenBurns">
     <div class="content">
       <div class="container">
         <div class="wrap">
-          <div class="wallpaper first-slide"></div>
           <div class="wallpaper-overlay"></div>
           <div class="body">
-            <div class="fix-3-12">
-              <svg height="77" class="wide ae-1 fromCenter">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
-              </svg>
-            </div>
-            <div>
-              <h1>
-                Chez Anna &amp; Mathieu
-              </h1>
-              <h3>
-                Maison d'hôtes écoresponsable à Arlos
-              </h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+            <div class="presentation">
+              <h1> Page (et jardin) en construction ! </h1>
 
-  <!-- Slide 2 -->
-  <section class="slide fade-6 kenBurns" data-name="news">
-    <div class="content">
-      <div class="container">
-        <div class="wrap">
-          <div class="wallpaper second-slide"></div>
-          <div class="wallpaper-overlay"></div>
-          <div class="body">
-            <div class="fix-7-12">
-              <div class="fix-3-12">
-                <svg height="77" class="wide ae-1 fromCenter">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
-                </svg>
+              <div class="sectionBlock">
+                <p class="text">
+                  Nous ouvrons cet été, mais nous commençons dès maintenant à préparer notre potager !
+                  <br>
+                  Qui dit potager, dit bons légumes bio & locaux 👩🏼‍🌾
+                  <br>
+                  <br> Voici quelques photos de nos semis et des plats que nous mijotons pour vous donner un avant-goût
+                  :
+                </p>
               </div>
-              <p class="larger light margin-top-2 ae-2"><span class="opacity-8">Inscrivez-vous pour avoir de nos
-                  nouvelles</span></p>
-              <div class="margin-top-3">
-                <form id="mailing-list" name="mailing-list" class="slides-form" data-netlify="true" action="/">
-                  <input type="hidden" name="mailing-list" value="mailing-list">
-                  <input type="email" class="rounded input-8 ae-4 fromCenter" name="email"
-                    placeholder="Adresse email" />
-                  <button type="submit" class="button green rounded ae-7 fromCenter" name="button">OK</button>
-                </form>
-                <p class="large margin-top-3 cropBottom ae-3"><span class="opacity-8">Nous arrivons <b>bientôt</b> à
-                    Arlos !</span></p>
-                <h3>
-                  Ouverture prévue juillet 2021
-                </h3>
+
+              <div class="sectionBlock">
+                <div class="pictures">
+                  <img src="assets/table/semis2.jpeg">
+                  <img src="assets/table/semis.jpeg">
+                </div>
               </div>
+
+              <p class="text">
+                Le petit déjeuner continental est compris dans la nuit.
+                Une boisson chaude de votre choix, un jus de fruit frais à l’extracteur, du pain frais maison,
+                des confitures maison, du miel local, des yaourts maisons, des fruits de saisons et une
+                pâtisserie du moment. Il sera possible pour les grands gourmands
+                d'avoir sur option un English Breakfast ou un brunch complet.
+                <br><br>
+                Pour le soir, nous vous proposerons un menu complet entrée/plat/dessert ainsi qu'un verre de vin.
+                Nous tenons à servir des plats gourmands, de saison, locaux et bio. Nous sommes flexitariens c’est
+                pourquoi il nous tient à cœur de proposer un menu adaptable : végétariens, végétaliens, vegans,
+                pesco-végétariens, sans gluten, sans lait de vache, sans allergènes.
+              </p>
+
+              <div class="divider"></div>
+              <div class="sectionBlock">
+                <div class="pictures">
+                  <img src="assets/table/pain.jpeg" alt="pain frais fait maison">
+                  <img src="assets/table/cookies.JPG" alt="cookies fait maison">
+                </div>
+              </div>
+
+              <div class="divider"></div>
+              <div class="sectionBlock">
+                <div class="pictures">
+                  <img src="assets/table/tomates.jpeg"
+                    alt="salade tomates du jardin / mozzarella / basilic / balsamique">
+                  <img src="assets/table/soupe.jpg" alt="soupe au chou rouge">
+                </div>
+              </div>
+
+              <div class="divider"></div>
+              <div class="sectionBlock">
+                <div class="pictures">
+                  <img src="assets/table/ramen.jpeg" alt="ramen fait maison">
+                  <img src="assets/table/poulet.jpeg" alt="poulet ratatouille du jardin">
+                </div>
+              </div>
+
+              <div class="divider"></div>
+              <div class="sectionBlock">
+                <div class="pictures">
+                  <img src="assets/table/massala.jpg" alt="poulet tikka massala aux cacahuètes">
+                  <img src="assets/table/chili.jpeg" alt="chili con carne fait maison">
+                </div>
+              </div>
+
+              <div class="divider"></div>
+              <div class="sectionBlock">
+                <div class="pictures">
+                  <img src="assets/table/mousse.jpeg" alt="mousse au chocolat fait maison">
+                  <img src="assets/table/cheesecake.JPG" alt="cheesecake fruits rouges fait maison">
+                </div>
+              </div>
+
+              <div class="divider"></div>
+              <div class="sectionBlock">
+                <div class="pictures">
+                  <img src="assets/table/cinnamon.jpg" alt="cinnamon rolls fait maison">
+                  <img src="assets/table/tarte.jpeg" alt="tarte aux pommes fait maison">
+                </div>
+              </div>
+
+              <p class="text">
+                Inscrivez-vous à notre <a href="/home#news">newsletter</a> pour suivre notre actualité... ou suivez
+                nos avancées sur <a target="_blank" href="http://instagram.com/maisondarlos">notre Instagram</a>
+              </p>
+
+
             </div>
+
+
+
           </div>
         </div>
       </div>
@@ -333,7 +355,7 @@
   </section>
 
   <!-- Panel Bottom -->
-  <nav class="panel bottom forceMobileView">
+  <nav class=" panel bottom forceMobileView">
     <div class="sections desktop">
       <div class="left"></div>
       <div class="center">
@@ -380,7 +402,6 @@
 
   <!-- Compressed Scripts -->
   <script src="/js/min.js" defer></script>
-  <script src="/js/main.js" defer></script>
 </body>
 
 </html>
