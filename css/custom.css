@@ -126,6 +126,7 @@ nav.panel.bottom {
   background-color: #000;
 }
 
+/* Media queries */
 @media screen and (max-width: 800px) {
   .presentation .photo {
     float: none;
@@ -151,11 +152,12 @@ nav.panel.bottom {
   }
 }
 
-ul.our-values {
+/* Overrides */
+ul {
   text-align: left;
 }
 
-ul.our-values li {
+ul li {
   list-style-type: disc;
 }
 
