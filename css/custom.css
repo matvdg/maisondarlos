@@ -188,6 +188,10 @@ nav.panel.bottom {
     width: 100px;
     font-size: smaller;
   }
+
+  .smaller-font-size {
+    font-size: smaller;
+  }
 }
 
 /* Overrides */
