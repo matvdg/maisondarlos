@@ -5,7 +5,7 @@ var home = new mapkit.Coordinate(42.893374, 0.69989)
 mapkit.init({
   authorizationCallback: function (done) {
     done(
-      "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkxZRlM2Q1gzOTMifQ.eyJpc3MiOiIzV0FRRjNBUzgyIiwiaWF0IjoxNjE0MDkzMDc1LCJleHAiOjE4OTUzMjUwNzUsIm9yaWdpbiI6Imh0dHBzOi8vbWFpc29uZGFybG9zLmZyIn0.Z_-KFV8cGAVNYJlE5JBkLcG7rxYAsgGTugKZ1iG_AF0yCuFUxbi7Ccwenm0XNQHSGilq-JVs06bL7J4hn2LJsg"
+      "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkRITkMzU1NRODQifQ.eyJpc3MiOiIzV0FRRjNBUzgyIiwiaWF0IjoxNjQ3OTA2NDE3LCJleHAiOjE2NzkzNTY4MDAsIm9yaWdpbiI6Imh0dHBzOi8vbWFpc29uZGFybG9zLmZyIn0.oXuxIu_m41vQa1kqnsgaWbn0AMxO6-3j_r1owsI6ph04DJLWqdPTkCxPvQ-N3CIDFLAnm4a21I2MEaO88Ov2qg"
     )
   },
 })
