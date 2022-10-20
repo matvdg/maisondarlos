@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <title>Bienvenida - Casa de Arlos</title>
+  <title>Maison d'Arlos</title>
   <meta name="keywords"
-    content="casa, hote, écoresponsable, arlos, pyrénées, haute-garonne, occitanie, gite, chambre, table, bio, local, randonnée, rando, val d'aran, mourtis">
-  <meta property="og:title" content="Maison d'Arlos" />
-  <meta name="twitter:title" content="Maison d'Arlos" />
+    content="casa de huespedes, b&b, eco-responsable, arlos, pyrenees, haute-garonne, occitanie, habitación, mesa, orgánico, local, senderismo, val d'aran, mourtis, baqueira">
+  <meta property="og:title" content="House of Arlos" />
+  <meta name="twitter:title" content="House of Arlos" />
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
   <!-- Compressed Styles -->
   <link href="/css/min.css" rel="stylesheet" type="text/css">
@@ -17,64 +17,65 @@
   <!-- Fonts and Material Icons -->
   <link rel="stylesheet" as="font"
     href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Material+Icons&display=swap" />
-  <style>
+  <styling>
     .slides {
-      font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
     }
 
-  </style>
-  <link href="/css/custom.css" rel="stylesheet" type="text/css">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+    </style>
+    <link href="/css/custom.css" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js"></script>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BTN2X08VSN"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BTN2X08VSN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', newDate());
 
-    gtag('config', 'G-BTN2X08VSN');
-  </script>
+      gtag('config', 'G-BTN2X08VSN');
+    </script>
 </head>
 
 <body class="slides animated noPreload">
   <svg id="customSvgLibrary" xmlns="http://www.w3.org/2000/svg" style="display:none">
     <symbol id="close" viewBox="0 0 30 30">
       <path
-        d="M15 0c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15zm5.7 19.3c.4.4.4 1 0 1.4-.2.2-.4.3-.7.3s-.5-.1-.7-.3l-4.3-4.3-4.3 4.3c-.2.2-.4.3-.7.3s-.5-.1-.7-.3c-.4-.4-.4-1 0-1.4l4.3-4.3-4.3-4.3c-.4-.4-.4-1 0-1.4s1-.4 1.4 0l4.3 4.3 4.3-4.3c.4-.4 1-.4 1.4 0s.4 1 0 1.4l-4.3 4.3 4.3 4.3z">
+        d="M15 0c-8.3 0-15 6.7-15 15s6.7 15 15 15 15-6.7 15-15-6.7-15-15-15zm5.7 19.3c.4.4.4 1 0 1.4-.2.2-.4.3 -.7.3s-.5-.1-.7-.3l-4.3-4.3-4.3 4.3c-.2.2-.4.3-.7.3s-.5-.1-.7-.3c-.4- .4-.4-1 0-1.4l4.3-4.3-4.3-4.3c-.4-.4-.4-1 0-1.4s1-.4 1.4 0l4.3 4.3 4.3-4.3c.4- .4 1-.4 1.4 0s.4 1 0 1.4l-4.3 4.3 4.3 4.3z">
       </path>
     </symbol>
 
     <symbol id="arrow-left" viewBox="0 0 29 56">
       <path
-        d="M28.7.3c.4.4.4 1 0 1.4l-26.3 26.3 26.3 26.3c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0l-27-27c-.4-.4-.4-1 0-1.4l27-27c.3-.3 1-.4 1.4 0z">
+        d="M28.7.3c.4.4.4 1 0 1.4l-26.3 26.3 26.3 26.3c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0l-27-27c-.4-.4-. 4-1 0-1.4l27-27c.3-.3 1-.4 1.4 0z">
       </path>
     </symbol>
 
     <symbol id="arrow-right" viewBox="0 0 29 56">
       <path
-        d="M.3 55.7c-.4-.4-.4-1 0-1.4l26.3-26.3-26.3-26.3c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l27 27c.4.4.4 1 0 1.4l-27 27c-.3.3-1 .4-1.4 0z">
+        d="M.3 55.7c-.4-.4-.4-1 0-1.4l26.3-26.3-26.3-26.3c-.4-.4-.4-1 0-1.4.4-. 4 1-.4 1.4 0l27 27c.4.4.4 1 0 1.4l-27 27c-.3.3-1 .4-1.4 0z">
       </path>
     </symbol>
 
     <symbol id="back" viewBox="0 0 20 20">
       <path
-        d="M2.3 10.7l5 5c.4.4 1 .4 1.4 0s.4-1 0-1.4l-3.3-3.3h11.6c.6 0 1-.4 1-1s-.4-1-1-1h-11.6l3.3-3.3c.4-.4.4-1 0-1.4-.2-.2-.4-.3-.7-.3s-.5.1-.7.3l-5 5c-.2.2-.3.5-.3.7 0 .2.1.5.3.7z">
+        d="M2.3 10.7l5 5c.4.4 1 .4 1.4 0s.4-1 0-1.4l-3.3-3.3h11.6c.6 0 1-.4 1-1s-.4-1-1-1h -11.6l3.3-3.3c.4-.4.4-1 0-1.4-.2-.2-.4-.3-.7-.3s-.5.1-.7.3l-5 5c-.2.2- .3.5-.3.7 0 .2.1.5.3.7z">
       </path>
     </symbol>
 
     <symbol id="menu" viewBox="0 0 18 18">
       <path
-        d="M16 5h-14c-.6 0-1-.4-1-1 0-.5.4-1 1-1h14c.5 0 1 .4 1 1s-.4 1-1 1zm-14 5h14c.5 0 1-.4 1-1 0-.5-.4-1-1-1h-14c-.6 0-1 .4-1 1s.4 1 1 1zm14 3h-14c-.5 0-1 .4-1 1 0 .5.4 1 1 1h14c.5 0 1-.4 1-1s-.4-1-1-1z">
+        d="M16 5h-14c-.6 0-1-.4-1-1 0-.5.4-1 1-1h14c.5 0 1 .4 1 1s-.4 1-1 1zm-14 5h14c.5 0 1-.4 1-1 0-.5-.4-1-1-1h-14c-.6 0-1.4-1 1s.4 1 1 1zm14 3h-14c-.5 0-1.4- 1 1 0 .5.4 1 1 1h14c.5 0 1-.4 1-1s-.4-1-1-1z">
       </path>
     </symbol>
 
     <symbol id="share" viewBox="0 0 18 18">
       <path
-        d="M16 8c-.6 0-1 .4-1 1v6h-12v-6c0-.6-.4-1-1-1s-1 .4-1 1v6c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-6c0-.6-.4-1-1-1zm-2.3-2.3c.4-.4.4-1 0-1.4l-4-4c-.4-.4-1-.4-1.4 0l-4 4c-.4.4-.4 1 0 1.4s1 .4 1.4 0l2.3-2.3v7.6c0 .6.4 1 1 1s1-.4 1-1v-7.6l2.3 2.3c.4.4 1 .4 1.4 0z">
+        d="M16 8c-.6 0-1.4-1 1v6h-12v-6c0-.6-.4-1-1-1s-1.4-1 1v6c0 1.1.9 2 2 2h12c1.1 0 2- .9 2-2v-6c0-.6-.4-1-1-1zm-2.3-2.3c.4-.4.4-1 0-1.4l-4-4c-.4-.4-1-.4 -1.4 0l-4 4c-.4.4-.4 1 0 1.4s1 .4 1.4 0l2.3-2.3v7.6c0 .6.4 1 1 1s1-.4 1-1v-7.6l2.3 2.3c.4.4 1 .4 1.4 0z">
       </path>
     </symbol>
 
@@ -86,13 +87,13 @@
 
     <symbol id="arrow-up" viewBox="0 0 24 24">
       <path
-        d="M11.9 5.9c.2 0 .5.1.7.3l11 10c.4.4.4 1 .1 1.4-.4.4-1 .4-1.4.1l-10.4-9.4-10.3 9.4c-.4.4-1 .3-1.4-.1-.4-.4-.3-1 .1-1.4l11-10c.1-.2.4-.3.6-.3z">
+        d="M11.9 5.9c.2 0 .5.1.7.3l11 10c.4.4.4 1 .1 1.4-.4.4-1 .4-1.4.1l-10.4-9.4-10.3 9.4c-.4.4-1 . 3-1.4-.1-.4-.4-.3-1 .1-1.4l11-10c.1-.2.4-.3.6-.3z">
       </path>
     </symbol>
 
     <symbol id="arrow-top" viewBox="0 0 18 18">
       <path
-        d="M15.7 7.3l-6-6c-.4-.4-1-.4-1.4 0l-6 6c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l4.3-4.3v11.6c0 .6.4 1 1 1s1-.4 1-1v-11.6l4.3 4.3c.2.2.4.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4z">
+        d="M15.7 7.3l-6-6c-.4-.4-1-.4-1.4 0l-6 6c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0l4.3-4.3v11 .6c0 .6.4 1 1 1s1-.4 1-1v-11.6l4.3 4.3c.2.2.4.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4z">
       </path>
     </symbol>
 
@@ -102,26 +103,26 @@
 
     <symbol id="chat" viewBox="0 0 18 18">
       <path
-        d="M5,17c-0.2,0-0.3,0-0.4-0.1C4.2,16.7,4,16.4,4,16v-2H2c-1.1,0-2-0.9-2-2V3c0-1.1,0.9-2,2-2h14c1.1,0,2,0.9,2,2v9 c0,1.1-0.9,2-2,2H9.3l-3.7,2.8C5.4,16.9,5.2,17,5,17z M2,12h3.5C5.8,12,6,12.2,6,12.5V14l2.4-1.8C8.6,12.1,8.8,12,9,12h7V3H2V12z M13,7H5C4.4,7,4,6.6,4,6s0.4-1,1-1h8c0.6,0,1,0.4,1,1S13.6,7,13,7z M13,10H5c-0.6,0-1-0.4-1-1s0.4-1,1-1h8c0.6,0,1,0.4,1,1 S13.6,10,13,10z">
+        d="M5,17c-0.2,0-0.3,0-0.4-0.1C4.2,16.7,4,16.4,4,16v-2H2c-1.1,0-2-0.9-2-2V3c0-1.1,0.9- 2.2-2h14c1.1,0,2,0.9,2,2v9 c0,1.1-0.9,2-2,2H9.3l-3.7,2.8C5.4,16.9,5.2,17,5,17z M2,12h3 .5C5.8,12,6,12.2,6,12.5V14l2.4-1.8C8.6,12.1,8.8,12,9,12h7V3H2V12z M13,7H5C4.4,7,4,6.6,4,6s0.4- 1.1-1h8c0.6,0,1,0.4,1,1S13.6,7,13,7z M13,10H5c-0.6,0-1-0.4-1-1s0.4-1,1-1h8c0.6 ,0,1,0.4,1,1 S13.6,10,13,10z">
       </path>
     </symbol>
 
     <symbol id="mail" viewBox="0 0 18 18">
       <path
-        d="M16 2h-14c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-10c0-1.1-.9-2-2-2zm0 2v.5l-7 4.3-7-4.4v-.4h14zm-14 10v-7.2l6.5 4c.1.1.3.2.5.2s.4-.1.5-.2l6.5-4v7.2h-14z">
+        d="M16 2h-14c-1.1 0-2 .9-2 ​​2v10c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-10c0-1.1-.9-2-2-2zm0 2v.5l- 7 4.3-7-4.4v-.4h14zm-14 10v-7.2l6.5 4c.1.1.3.2.5.2s.4-.1.5-.2l6.5-4v7.2h-14z">
       </path>
     </symbol>
 
     <!-- social -->
     <symbol id="apple" viewBox="-1 1 24 24">
       <path
-        d="M17.6 13.8c0-3 2.5-4.5 2.6-4.6-1.4-2.1-3.6-2.3-4.4-2.4-1.9-.2-3.6 1.1-4.6 1.1-.9 0-2.4-1.1-4-1-2 0-3.9 1.2-5 3-2.1 3.7-.5 9.1 1.5 12.1 1 1.5 2.2 3.1 3.8 3 1.5-.1 2.1-1 3.9-1s2.4 1 4 1 2.7-1.5 3.7-2.9c1.2-1.7 1.6-3.3 1.7-3.4-.1-.1-3.2-1.3-3.2-4.9zm-3.1-9c.8-1 1.4-2.4 1.2-3.8-1.2 0-2.7.8-3.5 1.8-.8.9-1.5 2.3-1.3 3.7 1.4.1 2.8-.7 3.6-1.7z">
+        d="M17.6 13.8c0-3 2.5-4.5 2.6-4.6-1.4-2.1-3.6-2.3-4.4-2.4-1.9-.2-3.6 1.1-4.6 1.1-.9 0-2.4-1.1-4- 1-2 0-3.9 1.2-5 3-2.1 3.7-.5 9.1 1.5 12.1 1 1.5 2.2 3.1 3.8 3 1.5-.1 2.1-1 3.9-1s2.4 1 4 1 2.7-1.5 3.7-2.9c1.2- 1.7 1.6-3.3 1.7-3.4-.1-.1-3.2-1.3-3.2-4.9zm-3.1-9c.8-1 1.4-2.4 1.2-3.8-1.2 0-2.7.8-3.5 1.8-.8.9- 1.5 2.3-1.3 3.7 1.4.1 2.8-.7 3.6-1.7z">
       </path>
     </symbol>
 
     <symbol id="facebook" viewBox="0 0 24 24">
       <path
-        d="M24 1.3v21.3c0 .7-.6 1.3-1.3 1.3h-6.1v-9.3h3.1l.5-3.6h-3.6v-2.2c0-1.1.3-1.8 1.8-1.8h1.9v-3.2c-.3 0-1.5-.1-2.8-.1-2.8 0-4.7 1.7-4.7 4.8v2.7h-3.1v3.6h3.1v9.2h-11.5c-.7 0-1.3-.6-1.3-1.3v-21.4c0-.7.6-1.3 1.3-1.3h21.3c.8 0 1.4.6 1.4 1.3z">
+        d="M24 1.3v21.3c0 .7-.6 1.3-1.3 1.3h-6.1v-9.3h3.1l.5-3.6h-3.6v-2.2c0-1.1.3-1.8 1.8-1.8h1.9v- 3.2c-.3 0-1.5-.1-2.8-.1-2.8 0-4.7 1.7-4.7 4.8v2.7h-3.1v3.6h3.1v9.2h-11.5c-.7 0-1.3-.6- 1.3-1.3v-21.4c0-.7.6-1.3 1.3-1.3h21.3c.8 0 1.4.6 1.4 1.3z">
       </path>
     </symbol>
 
@@ -133,61 +134,61 @@
 
     <symbol id="fb-like" viewBox="0 0 20 20">
       <path
-        d="M0 8v12h5v-12h-5zm2.5 10.8c-.4 0-.8-.3-.8-.8 0-.4.3-.8.8-.8s.8.3.8.8c0 .4-.4.8-.8.8zm3.5-.8h9.5c1.1 0 1.7-1 1.7-1.7 0-.3-.4-1-.4-1 1.4-.3 1.7-1.2 1.7-1.7-.1-.5-.3-.9-.5-1 1-.4 1.5-1.1 1.4-1.9-.1-.8-1-1.5-1-1.5 1-.6.9-1.5.9-1.5-.3-1.3-1.5-1.7-1.7-1.7h-5.6s.3-.5.3-2.4-1.3-3.6-2.6-3.6c0 0-.7.1-1 .3v3.5l-2.7 4.4v9.8z">
+        d="M0 8v12h5v-12h-5zm2.5 10.8c-.4 0-.8-.3-.8-.8 0-.4.3-.8.8-.8s.8.3.8.8c0 .4-.4.8- .8.8zm3.5-.8h9.5c1.1 0 1.7-1 1.7-1.7 0-.3-.4-1-.4-1 1.4-.3 1.7-1.2 1.7-1.7-.1-.5- .3-.9-.5-1 1-.4 1.5-1.1 1.4-1.9-.1-.8-1-1.5-1-1.5 1-.6.9-1.5.9-1.5-.3-1.3- 1.5-1.7-1.7-1.7h-5.6s.3-.5.3-2.4-1.3-3.6-2.6-3.6c0 0-.7.1-1.3v3.5l-2.7 4.4v9.8z">
       </path>
     </symbol>
 
     <symbol id="instagram" viewBox="0 0 20 20">
       <circle cx="10" cy="10" r="3.3"></circle>
       <path
-        d="M13,0H7C2.2,0,0,2.2,0,7v6c0,4.8,2.1,7,7,7h6c4.8,0,7-2.2,7-7V7C20,2.2,17.9,0,13,0z M10,15.1c-2.8,0-5.1-2.3-5.1-5.1 S7.2,4.9,10,4.9s5.1,2.3,5.1,5.1S12.8,15.1,10,15.1z M15.3,5.9c-0.7,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2s1.2,0.5,1.2,1.2 C16.5,5.3,16,5.9,15.3,5.9z">
+        d="M13,0H7C2.2,0,0,2.2,0,7v6c0,4.8,2.1,7,7,7h6c4.8,0,7-2.2,7-7V7C20,2.2,17.9,0,13,0z M10,15.1c-2.8,0-5.1-2.3-5.1-5.1 S7.2,4.9,10,4.9s5.1,2.3,5.1,5.1S12.8,15.1,10,15.1z M15.3,5.9c -0.7,0-1.2-0.5-1.2-1.2c0-0.7,0.5-1.2,1.2-1.2s1.2,0.5,1.2,1.2 C16.5,5.3,16,5.9,15.3,5.9z">
       </path>
     </symbol>
 
     <symbol id="pinterest" viewBox="0 0 24 24">
       <path
-        d="M5.9 13.9c1.2-2-.4-2.5-.6-4-1-6.1 7.1-10.2 11.4-6 2.9 2.9 1 12-3.7 11-4.6-.9 2.2-8.1-1.4-9.5-3-1.1-4.6 3.6-3.2 5.9-.8 4-2.5 7.7-1.8 12.7 2.3-1.7 3.1-4.8 3.7-8.1 1.2.7 1.8 1.4 3.3 1.5 5.5.4 8.6-5.4 7.8-10.7-.7-4.7-5.5-7.1-10.6-6.6-4.1.4-8.1 3.7-8.3 8.3-.1 2.8.7 4.9 3.4 5.5z">
+        d="M5.9 13.9c1.2-2-.4-2.5-.6-4-1-6.1 7.1-10.2 11.4-6 2.9 2.9 1 12-3.7 11-4.6-.9 2.2-8.1-1.4- 9.5-3-1.1-4.6 3.6-3.2 5.9-.8 4-2.5 7.7-1.8 12.7 2.3-1.7 3.1-4.8 3.7-8.1 1.2.7 1.8 1.4 3.3 1.5 5.5.4 8.6-5.4 7.8-10.7-.7- 4.7-5.5-7.1-10.6-6.6-4.1.4-8.1 3.7-8.3 8.3-.1 2.8.7 4.9 3.4 5.5z">
       </path>
     </symbol>
 
     <symbol id="twitter" viewBox="0 1 24 23">
       <path
-        d="M21.5 7.6v.6c0 6.6-5 14.1-14 14.1-2.8 0-5.4-.8-7.6-2.2l1.2.1c2.3 0 4.4-.8 6.1-2.1-2.2 0-4-1.5-4.6-3.4.3.1.6.1.9.1.5 0 .9-.1 1.3-.2-2.1-.6-3.8-2.6-3.8-5 .7.4 1.4.6 2.2.6-1.3-.9-2.2-2.4-2.2-4.1 0-.9.2-1.8.7-2.5 2.4 3 6.1 5 10.2 5.2-.1-.4-.1-.7-.1-1.1 0-2.7 2.2-5 4.9-5 1.4 0 2.7.6 3.6 1.6 1-.3 2.1-.7 3-1.3-.4 1.2-1.1 2.1-2.2 2.7 1-.1 1.9-.4 2.8-.8-.6 1.1-1.4 2-2.4 2.7z">
+        d="M21.5 7.6v.6c0 6.6-5 14.1-14 14.1-2.8 0-5.4-.8-7.6-2.2l1.2.1c2.3 0 4.4-.8 6.1-2.1-2.2 0-4-1.5 -4.6-3.4.3.1.6.1.9.1.5 0 .9-.1 1.3-.2-2.1-.6-3.8-2.6-3.8-5 .7.4 1.4.6 2.2.6-1.3-.9-2.2 -2.4-2.2-4.1 0-.9.2-1.8.7-2.5 2.4 3 6.1 5 10.2 5.2-.1-.4-.1-.7-.1-1.1 0-2.7 2.2-5 4.9-5 1.4 0 2.7.6 3.6 1.6 1-.3 2.1-.7 3-1.3-.4 1.2-1.1 2.1-2.2 2.7 1-.1 1.9-.4 2.8-.8-.6 1.1-1.4 2-2.4 2.7z">
       </path>
     </symbol>
 
     <symbol id="tumblr" viewBox="0 0 23 23">
       <path
-        d="M12.573 4.94v-4.94h-3.188c-.072.183-.11.4-.11.622-.034.107-.072.184-.072.293-.328 1.829-1.28 3.11-2.892 3.807-.476.218-.914.253-1.39.218v3.987h2.342c.039 5.603.039 8.493.039 8.64v.332c.294 2.449 1.573 3.914 3.843 4.463.914.257 1.901.366 2.892.366 1.279-.036 2.525-.256 3.771-.659v-4.685c-.731.22-1.395.402-1.977.583-1.135.333-2.087.113-2.857-.619-.073-.11-.183-.257-.221-.403-.106-.586-.178-1.206-.178-1.795v-6.222h5.083v-3.988h-5.085z">
+        d="M12.573 4.94v-4.94h-3.188c-.072.183-.11.4-.11.622-.034.107-.072.184-.072.293-.328 1.829-1.28 3.11-2.892 3.807-.476.218-.35.914.25 .218V3.987h2.342c.039 5.603.039 8.493.039 8.64V.332C.294 2.449 1.573 3.914 3.843 4.463.914.257 1.901.366,266,292.366 1.279- 731.22-1.395.402-1.977.583-1.135.333-2.087.113-2.857-.619-.073-.11-.183-.257-.221-.403-.106-.586-.178- 1.206-.178-1.795v-6.222h5.083v-3.988h-5.085z">
       </path>
     </symbol>
 
     <symbol id="whatsapp" viewBox="0 0 512 512">
       <path
-        d="M256.064 0h-.128c-141.152 0-255.936 114.816-255.936 256 0 56 18.048 107.904 48.736 150.048l-31.904 95.104 98.4-31.456c40.48 26.816 88.768 42.304 140.832 42.304 141.152 0 255.936-114.848 255.936-256s-114.784-256-255.936-256zm148.96 361.504c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.616-127.456-112.576-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016.16 8.576.288 7.52.32 11.296.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744-3.776 4.352-7.36 7.68-11.136 12.352-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z">
+        d="M256.064 0h-.128c-141.152 0-255.936 114.816-255.936 256 0 56 18.048 107.904 48.736 150.048l-31.904 95.104 98.4-31.456c40.48 26.816 88.768 42.304 140.832 42.304 141.152 0 255.936-114.848 255.936-256s-114.784 -256-255.936-256zm148.96 361.504c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.616-127.456-112.576-3.616-4.96-30.4-40.48- 30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016.16 8.576.288 7.52.32 11.296.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856 -2.4 5.12-4.512 7.392-8.288 11.744-3.776 4.352-7.36 7.68-11.136 12.352-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8 -16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 35.52z">
       </path>
     </symbol>
 
     <symbol id="youtube" viewBox="0 0 24 24">
       <path
-        d="M23.6 6.3c-.3-1.2-1.4-2.2-2.6-2.3-3-.3-6-.3-9-.3s-6 0-9 .3c-1.2.1-2.3 1.1-2.6 2.3-.4 1.8-.4 3.8-.4 5.7 0 1.9 0 3.9.4 5.7.3 1.2 1.4 2.2 2.6 2.3 3 .3 6 .3 9 .3s6 0 9-.3c1.3-.1 2.3-1.1 2.6-2.4.4-1.7.4-3.7.4-5.6 0-1.9 0-3.9-.4-5.7zm-14.1 9v-6.6l6.5 3.3-6.5 3.3z">
+        d="M23.6 6.3c-.3-1.2-1.4-2.2-2.6-2.3-3-.3-6-.3-9-.3s-6 0-9 .3c-1.2.1-2.3 1.1 -2.6 2.3-.4 1.8-.4 3.8-.4 5.7 0 1.9 0 3.9.4 5.7.3 1.2 1.4 2.2 2.6 2.3 3 .3 6 .3 9 .3s6 0 9-.3c1.3-.1 2.3- 1.1 2.6-2.4.4-1.7.4-3.7.4-5.6 0-1.9 0-3.9-.4-5.7zm-14.1 9v-6.6l6.5 3.3-6.5 3.3z">
       </path>
     </symbol>
 
     <symbol version="1.1" id="logo" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2048 1024"
       style="enable-background:new 0 0 2048 1024;" xml:space="preserve">
       <g>
-        <polygon style="fill:none;stroke:#FFFFFF;stroke-width:46;stroke-miterlimit:10;" points="712.04,718.58 829.91,995.92 
-		658.52,995.92 658.52,997.26 1282.26,997.26 1282.26,718.58 	"></polygon>
+        <polygon style="fill:none;stroke:#FFFFFF;stroke-width:46;stroke-miterlimit:10;" dots="712.04,718.58 829.91,995.92
+658.52,995.92 658.52,997.26 1282.26,997.26 1282.26,718.58 "></polygon>
         <rect x="1305.18" y="695.58" style="fill:#FFFFFF;" width="293.58" height="46.3"></rect>
       </g>
-      <polygon style="fill:none;stroke:#FFFFFF;stroke-width:48;stroke-miterlimit:10;" points="1269.23,654.39 969.23,54.39 
-	677.73,637.37 433.12,61.8 35.98,996.26 830.26,996.26 684.97,654.39 "></polygon>
+      <polygon style="fill:none;stroke:#FFFFFF;stroke-width:48;stroke-miterlimit:10;" dots="1269.23,654.39 969.23,54.39
+677.73,637.37 433.12,61.8 35.98,996.26 830.26,996.26 684.97,654.39 "></polygon>
     </symbol>
   </svg>
 
   <!-- Navigation -->
-  <nav class="side ">
+  <nav class="side">
     <div class="navigation default">
       <ul></ul>
     </div>
@@ -195,25 +196,26 @@
 
   <!-- Panel Top -->
   <nav class="panel top">
-    <div class="sections desktop">
-      <div class="left"><a href="/home-es" title="Slides Framework"><svg style="width:82px;height:24px">
+    <div class="desktop sections">
+      <div class="left"><a href="#home" title="Slides Framework"><svg style="width:82px;height:24px">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
           </svg></a></div>
       <div class="right">
         <ul class="menu trim">
-          <li><a href="/findus-es">Encuéntranos</a></li>
-          <li><a href="/ourrooms-es">Nuestas habitaciones</a></li>
-          <li><a href="/ourtable-es">Nuestra mesa de huéspedes</a></li>
-          <li><a href="/activities-es">Actividades</a></li>
-          <li><a href="/ourstory-es">Nuestra historia</a></li>
+          <li><a href="#findus">Encuéntranos</a></li>
+          <li><a href="#ourrooms">Nuestras habitaciones</a></li>
+          <li><a href="#breakfast">Nuestro desayuno</a></li>
+          <li><a href="#ourtable">Nuestra mesa de huéspedes</a></li>
+          <li><a href="#activities">Actividades</a></li>
+          <li><a href="#ourstory">Nuestra historia</a></li>
           <li class="cropRight"><a class="trimRight shift-up-2" href="http://facebook.com/maisondarlos"
               target="_blank"><svg>
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use>
-              </svg> Facebook</a></li>
+              </svg>Facebook</a></li>
           <li class="cropRight"><a class="trimRight shift-up-2" href="http://instagram.com/maisondarlos"
               target="_blank"><svg>
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#instagram"></use>
-              </svg> Instagram</a></li>
+              </svg>Instagram</a></li>
           <li><a href="/home"><img style="vertical-align:middle" src="assets/flags/fr.png" alt="Français" width="20"
                 height="20">
               Français</a></li>
@@ -224,7 +226,7 @@
       </div>
     </div>
     <div class="sections compact hidden">
-      <div class="left"><a href="/home-es" title="Slides Framework"><svg style="width:82px;height:24px">
+      <div class="left"><a href="#home" title="Slides Framework"><svg style="width:82px;height:24px">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
           </svg></a></div>
       <div class="right"><span class="button actionButton sidebarTrigger" data-sidebar-id="1"><svg>
@@ -239,20 +241,21 @@
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close"></use>
       </svg></div>
     <div class="content">
-      <a href="/home-es" class="logo"><svg width="100" height="30">
+      <a href="#home" class="logo"><svg width="100" height="30">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
         </svg></a>
       <ul class="mainMenu margin-top-3">
-        <li><a href="/findus-es">Encuéntranos</a></li>
-        <li><a href="/ourrooms-es">Nuestas habitaciones</a></li>
-        <li><a href="/ourtable-es">Nuestra mesa de huéspedes</a></li>
-        <li><a href="/activities-es">Actividades</a></li>
-        <li><a href="/ourstory-es">Nuestra historia</a></li>
+        <li><a href="#findus">Encuéntranos</a></li>
+        <li><a href="#ourrooms">Nuestras habitaciones</a></li>
+        <li><a href="#breakfast">Nuestro desayuno</a></li>
+        <li><a href="#ourtable">Nuestra mesa de huéspedes</a></li>
+        <li><a href="#activities">Actividades</a></li>
+        <li><a href="#ourstory">Nuestra historia</a></li>
       </ul>
       <ul class="subMenu small opacity-8">
-        <li><a href="/home-es/#news">News</a></li>
-        <li><a href="/terms-es">Condiciones</a></li>
-        <li><a href=/privacy-es>Confidentialidad</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#terms">Terms</a></li>
+        <li><a href="#privacy">Privacy</a></li>
       </ul>
       <ul class="subMenu small opacity-8">
         <li><a href="mailto:contact@maisondarlos.fr"><span class="material-icons">email</span>
@@ -263,7 +266,7 @@
         <li><a href="/home"><img style="vertical-align:middle" src="assets/flags/fr.png" alt="Français" width="20"
               height="20">
             Français</a></li>
-        <li><a href="/home-en"><img style="vertical-align:middle" src="assets/flags/es.png" alt="English" width="20"
+        <li><a href="/home-en"><img style="vertical-align:middle" src="assets/flags/uk.png" alt="English" width="20"
               height="20">
             English</a></li>
       </ul>
@@ -278,12 +281,13 @@
       </ul>
       <a href="https://www.pyrenees31.com/dormir/dormir-maison-darlos/"><img width="100" height="30"
           src="/assets/pyrenees31.svg"> </svg></a>
-      <a href="https://www.hautegaronnetourisme.com/hebergements/maison-dhotes-ecoresponsable-darlos/"><img width="100"
-          height="30" src="/assets/hg.svg"> </svg></a>
+      <a href="https://www.hautegaronnetourisme.com/accommodations/maison-dhotes-ecoresponsable-darlos/"><img
+          width="100" height="30" src="/assets/hg.svg"> </svg></a>
     </div>
   </nav>
-  <!-- Slide 1 -->
-  <section class="slide fade-6 kenBurns">
+
+  <!-- Slide home-->
+  <section class="slide fade-6 kenBurns" data-name="home">
     <div class="content">
       <div class="container">
         <div class="wrap">
@@ -297,23 +301,38 @@
             </div>
             <div>
               <h1>
-                Casa de Arlos
+                Maison d'Arlos
               </h1>
               <h3>
-                Bed and breakfast eco-responsable en el corazón de los Pirineos
+                Eco-responsible guest rooms and table in the heart of the Pyrenees
               </h3>
               <div class="divider"></div>
-              <a target="_blank" href="/ourrooms-es.html" class="button rounded green margin-top-1 ae-5 fromCenter"
-                style="align-self: flex-end;"> <span class="material-icons">bedroom_parent</span> Descubre nuestras
-                habitaciones</a>
+              <a href="#ourrooms" class="button rounded green margin-top-1 ae-5 fromCenter"
+                style="align-self: flex-end;"> <span class="material-icons">bedroom_parent</span> Discover our
+                rooms</a>
+              <div class="divider"></div>
+              <div class="divider"></div>
             </div>
+            <iframe allow="autoplay*; encrypted-media*; fullscreen*; clipboard-write" frameborder="0" height="450"
+              style="width:100%;max-width:660px;overflow:hidden;background:transparent;"
+              sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+              src="https://embed.music.apple.com/fr/playlist/playlist-official-de-la-maison-darlos/pl.u-0AldgcMpxZy"></iframe>
+            <div class="divider"></div>
+            <a class="bottom-link" href="#news">
+              News<br>
+              <svg style="width: 20px; height: 20px; fill: white;">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use>
+              </svg>
+            </a>
           </div>
+
+
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Slide 2 -->
+  <!-- Slide news-->
   <section class="slide fade-6 kenBurns" data-name="news">
     <div class="content">
       <div class="container">
@@ -322,22 +341,99 @@
           <div class="wallpaper-overlay"></div>
           <div class="body">
             <div class="fix-7-12">
-              <div class="fix-3-12">
-                <svg height="77" class="wide ae-1 fromCenter">
-                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use>
-                </svg>
-              </div>
-              <p class="larger light margin-top-2 ae-2"><span class="opacity-8">¡Suscríbete para recibir nuestro
-                  boletín!
+              <div class="divider"></div>
+              <h1>
+                News
+              </h1>
+              <div class="divider"></div>
+              <p> 🥳 New Year's Eve offer for 6 people 🎉: for 100€ per person we offer a special dinner
+                greedy
+                and festive for New Year's Eve, with wine and 🍾 champagne 🥂 included, the night for six people in
+                three
+                two bedrooms
+                with sheets and towels included (a shared bathroom for 2 bedrooms and a private one), and a small
+                local lunch
+                is greedy on New Year's Day. <a href="#findus"> Contact us for more info
+                  ! </a>
+              </p>
+              <p class="larger light margin-top-2 ae-2"><span class="opacity-8">Sign up to receive our
+                  newsletter!
                 </span></p>
               <div class="margin-top-3">
                 <form id="mailing-list" name="mailing-list" class="slides-form" data-netlify="true" action="/">
                   <input type="hidden" name="mailing-list" value="mailing-list">
-                  <input type="email" class="rounded input-8 ae-4 fromCenter" name="email" placeholder="email" />
-                  <button type="submit" class="button green rounded ae-7 fromCenter" name="button">OK</button>
+                  <input type="email" class="rounded input-8 ae-4 fromCenter" name="email"
+                    placeholder="Email address" />
+                  <button type="submit" class="button green rounded ae-7 fromCenter" name="button">Subscribe</button>
                 </form>
 
               </div>
+            </div>
+            <div class="divider"></div>
+            <br><br>
+            <a class="bottom-link" href="#findus">
+              Find us<br>
+              <svg style="width: 20px; height: 20px; fill: white;">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide findus-->
+  <section class="slide fade-6 kenBurns" data-name="findus">
+
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="wallpaper first-slide"></div>
+          <div class="wallpaper-overlay"></div>
+          <div class="body">
+
+            <div>
+              <h1> Find us </h1>
+              <p>
+                <a target="_blank"
+                  href="https://www.google.com/maps/dir/?api=1&destination=42.893374,0.69989&travelmode=driving"><b>8
+                    La Lano de Dessus, 31440 ARLOS</b></a>
+              </p>
+
+              <p>
+                Arlos is a small town in the valley of
+                Saint-Béat, in the country of Comminges. It is located in the department of Haute-Garonne in the Region
+                Occitanie 1h40 from Toulouse and 26 min from Bagnères-de-Luchon. Arlos is ideally located near
+                from Spain (in just 10 minutes by car) where our Garonne is born.
+                You can park your car with us and it is possible to put motorbikes or bicycles in our
+                garage.
+              </p>
+              <a target="_blank"
+                href="https://www.google.com/maps/dir/?api=1&destination=42.893374,0.69989&travelmode=driving"
+                class="button rounded green margin-top-1 ae-5 fromCenter" style="align-self: flex-end;"> <span
+                  class="material-icons">directions_car</span> Directions</a>
+              <a href="mailto:contact@maisondarlos.fr"
+                class="smaller-font-size button rounded white margin-top-1 ae-5 fromCenter"
+                style="align-self: flex-end;"> <span class="material-icons">email</span> contact@maisondarlos.fr</a>
+              <a href="tel:+33699006461" class="smaller-font-size button rounded white margin-top-1 ae-6 fromCenter"
+                style="align-self: flex-end;"> <span class="material-icons">phone</span> (+33) 06 99 00 64 61</a>
+
+
+              <div class="divider"></div>
+              <div class="section-block">
+                <div class="pictures">
+                  <img src="assets/home.jpg">
+                </div>
+              </div>
+
+              <div id="map"></div>
+              <a class="bottom-link" href="#ourrooms">
+                Our rooms<br>
+                <svg style="width: 20px; height: 20px; fill: white;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
@@ -345,20 +441,1214 @@
     </div>
   </section>
 
+  <!-- Slide ourrooms-->
+  <section class="slide fade-6 kenBurns" data-name="ourrooms">
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="wallpaper-overlay"></div>
+          <div class="body">
+            <div class="presentation">
+              <h1> Our rooms </h1>
+              <p class="text">
+                Our three bedrooms are inspired by the Pyrenees which surround us, with a view of the mountain where the
+                colors change with the seasons. <br>
+                All furniture has been designed by us in solid elm, local and sustainable wood. The bedding is
+                brand new and quality.<br><br>
+                A local, organic and gourmet breakfast is included in the price of the rooms.<br><br>
+              </p>
+              <table class="centered">
+                <tbody>
+                  <tr>
+                    <td class="column">
+                      <a href="#aneto" class="column">
+                        <div class="mini-photo" style="background-image: url(../assets/rooms/aneto-mini.jpeg);"></div>
+                        Aneto bedroom
+                      </a>
+                    </td>
+                    <td class="column">
+                      <a href="#gar" class="column">
+                        <div class=" mini-photo" style="background-image: url(../assets/rooms/gar-mini.jpeg);">
+                        </div>
+                        Gar bedroom
+                      </a>
+                    </td>
+                    <td class="column">
+                      <a href="#saillant" class="column">
+                        <div class=" mini-photo" style="background-image: url(../assets/rooms/saillant-mini.jpeg);">
+                        </div>
+                        Saillant bedroom
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="column">
+                      <br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="column">
+                      <a href="#2rooms" class="column">
+                        <div class=" mini-photo" style="background-image: url(../assets/rooms/2rooms-mini.jpeg);">
+                        </div>
+                        Two bedrooms offer
+                      </a>
+                    </td>
+                    <td class="column">
+                      <a href="#3rooms" class="column">
+                        <div class=" mini-photo" style="background-image: url(../assets/rooms/3rooms-mini.jpeg);">
+                        </div>
+                        Three bedrooms offer
+                      </a>
+                    </td>
+                    <td class="column">
+                      <a href="#common" class="column">
+                        <div class=" mini-photo" style="background-image: url(../assets/rooms/common-mini.jpeg);">
+                        </div>
+                        Common parts
+                      </a>
+                    </td>
+
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <div class="divider"></div>
+            <br><br>
+            <a class="bottom-link" href="#aneto">
+              Aneto Room<br>
+              <svg style="width: 20px; height: 20px; fill: white;">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide aneto-->
+  <section class="slide fade-6 kenBurns" data-name="aneto">
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="wallpaper-overlay"></div>
+          <div class="body">
+            <div class="presentation">
+              <div class="section-block">
+                <h1> Aneto room </h1>
+                <br>
+                <p class="text">
+                  The Aneto room takes its name from the highest peak in the Pyrenees, culminating at 3404 m, not far
+                  from our valley.
+                </p>
+
+                <p class="text">
+                  <b>€80/night with breakfast included for two people</b><br>
+                  70€/night with breakfast included for one person<br>
+                  70€/night/room from two consecutive nights<br>
+                  Sheets and towels provided<br>
+                  Welcome drink offered<br>
+                  Shared bathroom and separate WC
+                  Queen size bed
+                </p>
+
+              </div>
+
+              <div class="section-block">
+                <div class="pictures">
+                  <img src="assets/rooms/aneto2.jpeg">
+                  <img src="assets/rooms/aneto3.jpeg">
+                </div>
+              </div>
+
+              <div class="divider"></div>
+              <h3> Availability of the Aneto room:</h3>
+              <div id="ConstellationCalendarContainer28ef2c96-6f61-448b-a845-afa0da3b0b0e"
+                style="width:100%; text-align:center;"
+                title="Maison d&#39;Arlos, &#233;eco-responsible rooms and table d&#39;h&tes in the heart of the Pyrenees"
+                data-id-project='28ef2c966f61448ba845afa0da3b0b0e'>Loading...</div>
+              <script type="text/javascript"
+                src="https://reservation.elloha.com/Scripts/widget-loader.min.js?v=42"></script>
+              <script
+                type="text/javascript">var constellationWidgetUrl28ef2c966f61448ba845afa0da3b0b0e, constellationTypeModule28ef2c966f61448ba845afa0da3b0b0e; constellationWidgetUrl28ef2c966f61448ba845afa0da3b0b0e = 'https://reservation.elloha.com/Widget/BookingCalendar/28ef2c96-6f61-448b-a845-afa0da3b0b0e?idoi=e15215cd-f5f6-48ae-9b50-0a58d4ea96'; constellationTypeModule28ef2c966f61448ba845afa0da3b0b0e = 2; constellationBookingCalendarLoad('ConstellationCalendarContainer28ef2c96-6f61-448b-a845-afa0da3b0b0e'); constellationWidgetAddEvent(window, "resize", function () { constellationWidgetSetAppearance('ConstellationCalendarContainer28ef2c96-6f61-448b-a845-afa0da3b0b0e'); });</script>
+
+              <a target="_blank" href="https://forms.gle/gqu26PHdAhWLAYmw5"
+                class="button rounded green margin-top-1 ae-5 fromCenter" style="align-self: flex-end;"> <span
+                  class="material-icons">event</span>Book</a>
+
+              <a href="tel:+33699006461" class="smaller-font-size button rounded white margin-top-1 ae-6 fromCenter"
+                style="align-self: flex-end;"> <span class="material-icons">phone</span> Contact Us</a>
+
+              <div class="divider"></div>
+
+              <a class="bottom-link" href="#ourrooms">
+                <svg style="width: 20px; height: 20px; fill: white;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-up"></use>
+                </svg>
+                <br>
+                Return
+              </a>
+              <br><br>
+              <a class="bottom-link" href="#gar">
+                Pic du Gar room<br>
+                <svg style="width: 20px; height: 20px; fill: white;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use>
+                </svg>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide gar-->
+  <section class="slide fade-6 kenBurns" data-name="gar">
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="wallpaper-overlay"></div>
+          <div class="body">
+            <div class="presentation">
+
+              <div class="section-block">
+                <h1> Bedroom Pic du Gar</h1>
+                <br>
+                <p class="text">
+                  The Pic du Gar is the peak closest to us, culminating at 1785 m above sea level, visible from
+                  our garden. Something to inspire you for your next hikes!
+                </p>
+
+                <p class="text">
+                  <b>€80/night with breakfast included for two people</b><br>
+                  70€/night with breakfast included for one person<br>
+                  70€/night/room from two consecutive nights<br>
+                  Sheets and towels provided<br>
+                  Welcome drink offered<br>
+                  Shared bathroom and separate WC
+                  Queen size bed
+                </p>
+
+              </div>
+
+              <div class="section-block">
+                <div class="pictures">
+                  <img src="assets/rooms/gar2.jpeg">
+                  <img src="assets/rooms/gar3.jpeg">
+                </div>
+              </div>
+
+              <div class="divider"></div>
+              <h3> Availability of the Pic du Gar room:</h3>
+              <div id="ConstellationCalendarContainer377a084c-0542-4f80-8cc1-6ee9967d33d6"
+                style="width:100%; text-align:center;"
+                title="Maison d&#39;Arlos, chambres et table d&#39;h&#244;tes &#233;co-responsables au coeur des Pyr&#233;n&#233;es"
+                data-id-projet='377a084c05424f808cc16ee9967d33d6'>Espera un momentito...</div>
+              <script type="text/javascript"
+                src="https://reservation.elloha.com/Scripts/widget-loader.min.js?v=42"></script>
+              <script
+                type="text/javascript">var constellationWidgetUrl377a084c05424f808cc16ee9967d33d6, constellationTypeModule377a084c05424f808cc16ee9967d33d6; constellationWidgetUrl377a084c05424f808cc16ee9967d33d6 = 'https://reservation.elloha.com/Widget/BookingCalendar/377a084c-0542-4f80-8cc1-6ee9967d33d6?idoi=e15215cd-f5f6-48ae-9b50-0a5c4ea96dd8'; constellationTypeModule377a084c05424f808cc16ee9967d33d6 = 2; constellationBookingCalendarLoad('ConstellationCalendarContainer377a084c-0542-4f80-8cc1-6ee9967d33d6'); constellationWidgetAddEvent(window, "resize", function () { constellationWidgetSetAppearance('ConstellationCalendarContainer377a084c-0542-4f80-8cc1-6ee9967d33d6'); });</script>
+              <a target="_blank" href="https://forms.gle/gqu26PHdAhWLAYmw5"
+                class="button rounded green margin-top-1 ae-5 fromCenter" style="align-self: flex-end;"> <span
+                  class="material-icons">event</span>Book</a>
+
+              <a href="tel:+33699006461" class="smaller-font-size button rounded white margin-top-1 ae-6 fromCenter"
+                style="align-self: flex-end;"> <span class="material-icons">phone</span> Contact Us</a>
+
+              <div class="divider"></div>
+              <a class="bottom-link" href="#ourrooms">
+                <svg style="width: 20px; height: 20px; fill: white;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-up"></use>
+                </svg>
+                <br>
+                Return
+              </a>
+              <br><br>
+              <a class="bottom-link" href="#saillant">
+                Saillant Room<br>
+                <svg style="width: 20px; height: 20px; fill: white;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use>
+                </svg>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Saillant slide-->
+  <section class="slide fade-6 kenBurns" data-name="saillant">
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="wallpaper-overlay"></div>
+          <div class="body">
+            <div class="presentation">
+
+              <div class="section-block">
+                <h1> Saillant bedroom</h1>
+                <br>
+                <p class="text">
+                  The Pic Saillant is the closest peak visible from home, culminating at 1756 m above sea level,
+                  visible from our garden. Something to inspire you for your next hikes!
+                </p>
+
+                <p class="text">
+                  <b>€90/night with breakfast included for two people</b><br>
+                  80€/night with breakfast included for one person<br>
+                  80€/night/room from 2 consecutive nights<br>
+                  Sheets and towels provided<br>
+                  Welcome drink offered<br>
+                  Private bathroom with WC<br>
+                  Private terrace<br>
+                  Private entrance (access through the garden)<br>
+                  Queen size bed
+                </p>
+
+              </div>
+
+              <div class="section-block">
+                <div class="pictures">
+                  <img src="assets/rooms/saillant1.jpeg">
+                  <img src="assets/rooms/saillant2.jpeg">
+                </div>
+              </div>
+
+              <div class="divider"></div>
+              <h3> Availability of the Saillant room:</h3>
+
+              <div id="ConstellationCalendarContainer4871a22e-9107-490d-b286-0617bb2796db"
+                style="width:100%; text-align:center;"
+                title="Maison d&#39;Arlos, chambres et table d&#39;h&#244;tes &#233;co-responsables au coeur des Pyr&#233;n&#233;es"
+                data-id-projet='4871a22e9107490db2860617bb2796db'>Espera un momentito...</div>
+              <script type="text/javascript"
+                src="https://reservation.elloha.com/Scripts/widget-loader.min.js?v=42"></script>
+              <script
+                type="text/javascript">var constellationWidgetUrl4871a22e9107490db2860617bb2796db, constellationTypeModule4871a22e9107490db2860617bb2796db; constellationWidgetUrl4871a22e9107490db2860617bb2796db = 'https://reservation.elloha.com/Widget/BookingCalendar/4871a22e-9107-490d-b286-0617bb2796db?idoi=e15215cd-f5f6-48ae-9b50-0a5c4ea96dd8'; constellationTypeModule4871a22e9107490db2860617bb2796db = 2; constellationBookingCalendarLoad('ConstellationCalendarContainer4871a22e-9107-490d-b286-0617bb2796db'); constellationWidgetAddEvent(window, "resize", function () { constellationWidgetSetAppearance('ConstellationCalendarContainer4871a22e-9107-490d-b286-0617bb2796db'); });</script>
+
+              <a target="_blank" href="https://forms.gle/gqu26PHdAhWLAYmw5"
+                class="button rounded green margin-top-1 ae-5 fromCenter" style="align-self: flex-end;"> <span
+                  class="material-icons">event</span>Book</a>
+
+              <a href="tel:+33699006461" class="smaller-font-size button rounded white margin-top-1 ae-6 fromCenter"
+                style="align-self: flex-end;"> <span class="material-icons">phone</span> Contact Us</a>
+
+              <div class="divider"></div>
+              <a class="bottom-link" href="#ourrooms">
+                <svg style="width: 20px; height: 20px; fill: white;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-up"></use>
+                </svg>
+                <br>
+                Return
+              </a>
+              <br><br>
+              <a class="bottom-link" href="#2rooms">
+                Two bedrooms offer<br>
+                <svg style="width: 20px; height: 20px; fill: white;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use>
+                </svg>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide 2rooms-->
+  <section class="slide fade-6 kenBurns" data-name="2rooms">
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="wallpaper-overlay"></div>
+          <div class="body">
+            <div class="presentation">
+
+              <div class="section-block">
+                <h1> Two bedrooms offer</h1>
+                <br>
+              </div>
+              <p class="text">
+                <b>€140/night with breakfast included for 4 people</b><br>
+                Sheets and towels provided<br>
+                Welcome drink offered<br>
+                Up to 4 people<br>
+                The two bedrooms share a common bathroom and a separate WC<br>
+                Queen size beds
+              </p>
+
+              <div class="divider"></div>
+              <div class="section-block">
+                <div class="pictures">
+                  <img src="assets/rooms/aneto1.jpeg">
+                  <img src="assets/rooms/gar1.jpeg">
+                </div>
+              </div>
+
+              <div class="divider"></div>
+              <h3> Availability of our two rooms:</h3>
+              <div id="ConstellationCalendarContainer4febb4ea-535b-47ac-8ed3-9e9502a2f84d"
+                style="width:100%; text-align:center;"
+                title="Maison d&#39;Arlos, &#233;eco-responsible rooms and table d&#39;h&tes in the heart of the Pyrenees"
+                data-id-project='4febb4ea535b47ac8ed39e9502a2f84d'>Loading...</div>
+              <script type="text/javascript"
+                src="https://reservation.elloha.com/Scripts/widget-loader.min.js?v=42"></script>
+              <script
+                type="text/javascript">var constellationWidgetUrl4febb4ea535b47ac8ed39e9502a2f84d, constellationTypeModule4febb4ea535b47ac8ed39e9502a2f84d; constellationWidgetUrl4febb4ea535b47ac8ed39e9502a2f84d = 'https://reservation.elloha.com/Widget/BookingCalendar/4febb4ea-535b-47ac-8ed3-9e9502a2f84d?idoi=e15215cd-f5f6-48ae-9b50-0a5c4ea96dd8'; constellationTypeModule4febb4ea535b47ac8ed39e9502a2f84d = 2; constellationBookingCalendarLoad('ConstellationCalendarContainer4febb4ea-535b-47ac-8ed3-9e9502a2f84d'); constellationWidgetAddEvent(window, "resize", function () { constellationWidgetSetAppearance('ConstellationCalendarContainer4febb4ea-535b-47ac-8ed3-9e9502a2f84d'); });</script>
+
+              <div class="divider"></div>
+
+
+              <a target="_blank" href="https://forms.gle/gqu26PHdAhWLAYmw5"
+                class="button rounded green margin-top-1 ae-5 fromCenter" style="align-self: flex-end;"> <span
+                  class="material-icons">event</span>Book</a>
+
+              <a href="tel:+33699006461" class="smaller-font-size button rounded white margin-top-1 ae-6 fromCenter"
+                style="align-self: flex-end;"> <span class="material-icons">phone</span> Contact Us</a>
+
+              <div class="divider"></div>
+              <a class="bottom-link" href="#ourrooms">
+                <svg style="width: 20px; height: 20px; fill: white;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-up"></use>
+                </svg>
+                <br>
+                Return
+              </a>
+              <br><br>
+              <a class="bottom-link" href="#3rooms">
+                Three bedrooms offer<br>
+                <svg style="width: 20px; height: 20px; fill: white;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide 3rooms-->
+  <section class="slide fade-6 kenBurns" data-name="3rooms">
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="wallpaper-overlay"></div>
+          <div class="body">
+            <div class="presentation">
+
+              <div class="section-block">
+                <h1>Three bedrooms offer</h1>
+                <br>
+                <p class="text">
+
+                </p>
+              </div>
+              <p class="text">
+                <b>€220/night with breakfast included for 6 people</b><br>
+                Sheets and towels provided<br>
+                Welcome drink offered<br>
+                Up to 6 people<br>
+                Aneto and Gar share a common bathroom and a separate toilet on the first floor, Saillant has
+                its own private bathroom with WC<br>
+                Queen size beds
+              </p>
+
+              <div class="divider"></div>
+              <div class="section-block">
+                <div class="pictures">
+                  <img src="assets/rooms/salient1.jpeg">
+                  <img src="assets/rooms/gar1.jpeg">
+                </div>
+              </div>
+
+              <div class="divider"></div>
+              <h3> Availability of our three bedrooms:</h3>
+              <div id="ConstellationCalendarContainer4febb4ea-535b-47ac-8ed3-9e9502a2f84d"
+                style="width:100%; text-align:center;"
+                title="Maison d&#39;Arlos, &#233;eco-responsible rooms and table d&#39;h&tes in the heart of the Pyrenees"
+                data-id-project='4febb4ea535b47ac8ed39e9502a2f84d'>Loading...</div>
+              <script type="text/javascript"
+                src="https://reservation.elloha.com/Scripts/widget-loader.min.js?v=42"></script>
+              <script
+                type="text/javascript">var constellationWidgetUrl4febb4ea535b47ac8ed39e9502a2f84d, constellationTypeModule4febb4ea535b47ac8ed39e9502a2f84d; constellationWidgetUrl4febb4ea535b47ac8ed39e9502a2f84d = 'https://reservation.elloha.com/Widget/BookingCalendar/4febb4ea-535b-47ac-8ed3-9e9502a2f84d?idoi=e15215cd-f5f6-48ae-9b50-0a5c4ea96dd8'; constellationTypeModule4febb4ea535b47ac8ed39e9502a2f84d = 2; constellationBookingCalendarLoad('ConstellationCalendarContainer4febb4ea-535b-47ac-8ed3-9e9502a2f84d'); constellationWidgetAddEvent(window, "resize", function () { constellationWidgetSetAppearance('ConstellationCalendarContainer4febb4ea-535b-47ac-8ed3-9e9502a2f84d'); });</script>
+
+              <div class="divider"></div>
+
+
+              <a target="_blank" href="https://forms.gle/gqu26PHdAhWLAYmw5"
+                class="button rounded green margin-top-1 ae-5 fromCenter" style="align-self: flex-end;"> <span
+                  class="material-icons">event</span>Book</a>
+
+              <a href="tel:+33699006461" class="smaller-font-size button rounded white margin-top-1 ae-6 fromCenter"
+                style="align-self: flex-end;"> <span class="material-icons">phone</span> Contact Us</a>
+
+              <div class="divider"></div>
+              <a class="bottom-link" href="#ourrooms">
+                <svg style="width: 20px; height: 20px; fill: white;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-up"></use>
+                </svg>
+                <br>
+                Return
+              </a>
+              <br><br>
+              <a class="bottom-link" href="#common">
+                Common areas<br>
+                <svg style="width: 20px; height: 20px; fill: white;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use>
+                </svg>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide common-->
+  <section class="slide fade-6 kenBurns" data-name="common">
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="wallpaper-overlay"></div>
+          <div class="body">
+            <div class="presentation">
+
+              <div class="section-block">
+                <h1> Common areas</h1>
+                <br>
+                <p class="text">
+                  Our living room is open to you for your relaxation. You can have a drink, play games of
+                  company or read a good book by the heat of the stove. A library is available at
+                  the floor (we do have Enghlish books! 🇬🇧🥳 )
+                  In summer, you will eat on our terrace to enjoy the garden and the mountain view.
+                  WiFi is at your disposal (we have very high speed fiber in Arlos!) as well as 4K TV
+                  (Netflix/Disney+/Prime/TV+...).
+                </p>
+
+              </div>
+
+              <div class="section-block">
+                <div class="pictures">
+                  <img src="assets/rooms/common.jpeg">
+                  <img src="assets/rooms/outside.jpeg">
+                </div>
+              </div>
+
+              <a class="bottom-link" href="#ourrooms">
+                <svg style="width: 20px; height: 20px; fill: white;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-up"></use>
+                </svg>
+                <br>
+                Return
+              </a>
+              <br><br>
+              <a class="bottom-link" href="#breakfast">
+                Breakfast<br>
+                <svg style="width: 20px; height: 20px; fill: white;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use>
+                </svg>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide breakfast-->
+  <section class="slide fade-6 kenBurns" data-name="breakfast">
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="wallpaper-overlay"></div>
+          <div class="body">
+            <div class="presentation">
+
+              <div class="section-block">
+                <h1> Breakfast</h1>
+                <br>
+                <p class="text">Our breakfast is served at your request between 7am and 10am. It is gourmet, organic
+                  and locally. We make our own homemade bread with organic flour from our region and we
+                  offer homemade jams and honey from the valley! In addition to the traditional breakfast,
+                  we concoct you every morning a little sweet or savory delicacy according to your tastes as well as a
+                  fresh and seasonal fruit salad! Optionally,
+                  we can also organize a brunch.</p>
+              </div>
+
+              <div class="section-block">
+                <div class="pictures">
+                  <img src="assets/breakfast/babka.jpeg">
+                  <img src="assets/breakfast/breadhoney.jpeg">
+                </div>
+              </div>
+              <div class="section-block">
+                <div class="pictures">
+                  <img src="assets/breakfast/breakfast.jpeg">
+                  <img src="assets/breakfast/jam.jpeg">
+                </div>
+              </div>
+              <br><br>
+              <a class="bottom-link" href="#ourtable">
+                Our table<br>
+                <svg style="width: 20px; height: 20px; fill: white;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use>
+                </svg>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide ourtable -->
+  <section class="slide fade-6 kenBurns" data-name="ourtable">
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="wallpaper-overlay"></div>
+          <div class="body">
+            <div class="presentation">
+              <h1>Our table</h1>
+
+              <p class="text">
+                For the evening, we offer a full menu at <b>25€/person</b> with an aperitif, main course and
+                serves like this
+                than a glass of wine.
+                <br><br>Optional for an additional €5, we offer the mountain dweller's menu at <b>€30/person</b> with a
+                aperitif, starter, dish, cheese and pudding accompanied by wine.
+                <br><br>
+                Do not hesitate to ask us for a tartiflette, raclette or Savoyard fondue!
+                <br><br>We are keen to serve gourmet, seasonal, local and organic dishes. If needed, we can
+                adapt our menu: vegetarian, vegan, vegan,
+                Pesco-vegetarian, gluten-free, cow's milk-free, allergen-free, to be specified when booking.
+              </p>
+
+              <a target="_blank" href="https://forms.gle/gqu26PHdAhWLAYmw5"
+                class="button rounded green margin-top-1 ae-5 fromCenter" style="align-self: flex-end;"> <span
+                  class="material-icons">event</span>Book</a>
+
+              <a href="tel:+33699006461" class="smaller-font-size button rounded white margin-top-1 ae-6 fromCenter"
+                style="align-self: flex-end;"> <span class="material-icons">phone</span> Contact Us</a>
+
+              <div class="divider"></div>
+              <div class="section-block">
+                <div class="pictures">
+                  <img src="assets/table/gazpacho.jpeg" alt="homemade gazpacho">
+                  <img src="assets/table/creme.jpeg" alt="crumble">
+                </div>
+              </div>
+
+              <div class="divider"></div>
+              <div class="section-block">
+                <div class="pictures">
+                  <img src="assets/table/bourguignon.jpeg" alt="beef bourguignon">
+                  <img src="assets/table/lemoncurd.jpeg" alt="lemon pie">
+                </div>
+              </div>
+
+            </div>
+            <br><br>
+            <a class="bottom-link" href="#activities">
+              Activities<br>
+              <svg style="width: 20px; height: 20px; fill: white;">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use>
+              </svg>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide activities-->
+  <section class="slide fade-6 kenBurns" data-name="activities">
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="wallpaper-overlay"></div>
+          <div class="body">
+            <div class="presentation">
+              <h1> Activities </h1>
+              <div class="section-block">
+                <h3>Many activities
+                  around our house, in all seasons! </h3>
+              </div>
+              <table class="centered">
+                <tbody>
+                  <tr>
+                    <td class="column">
+                      <a href="#hiking" class="column">
+                        <div class="mini-photo" style="background-image: url(../assets/activities/hiking-mini.jpg);">
+                        </div>
+                        Hiking & walking
+                      </a>
+                    </td>
+                    <td class="column">
+                      <a href="#winter" class="column">
+                        <div class=" mini-photo" style="background-image: url(../assets/activities/winter-mini.jpg);">
+                        </div>
+                        Winter sports
+                      </a>
+                    </td>
+                    <td class="column">
+                      <a href="#otheractivities" class="column">
+                        <div class=" mini-photo"
+                          style="background-image: url(../assets/activities/paraglider-mini.jpg);">
+                        </div>
+                        Other activites
+                      </a>
+                    </td>
+
+                  </tr>
+
+                </tbody>
+              </table>
+              <div class="divider"></div>
+              <br><br>
+              <a class="bottom-link" href="#hiking">
+                Hiking & walking<br>
+                <svg style="width: 20px; height: 20px; fill: white;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide hiking-->
+  <section class="slide fade-6 kenBurns" data-name="hiking">
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="wallpaper-overlay"></div>
+          <div class="body">
+            <div class="presentation">
+
+              <div class="section-block">
+                <h3 style="text-align: left;"> 🏔 Hiking & walking</h3>
+                <p class="text">
+                <ul>
+                  <li> From our house, a forest path going from St Béat to the Arlos waterfall passing
+                    by the village allows you to discover the area accessible to all! We are here for you
+                    advise for other walks with breathtaking views of the Pyrenees, especially at Mourtis,
+                    Melles or Argut-Dessus.</li>
+                  <li> The long-distance hiking trail allowing you to cross
+                    e from the Pyrenees
+                    by a
+                    marked route, the <b>GR10</b>, passes 15 minutes on foot from our house, an ideal stopover for
+                    celebrate the middle of the transpyrenean!</li>
+                  <li> Many peaks in the area: the Pic du <b>Cagire</b> (1,912 m), the Pic du <b>Gar</b> (1,785
+                    m), the Peak of
+                    the <b>Hage</b> (2,165 m), the Pic de <b>Sacaube </b> (1,770 m), the Pic de <b>Crabère </b> (2,630
+                    m). .
+                  </li>
+                  <li> The <b>Val d’Aran
+                    </b> (Spain)</li>
+                  <li>Les Encantats - The Aigüestortes National Park: Located on the edge of the Val d'Aran, the
+                    Encantats (the enchanted), is a vast protected area and a National Park. A myriad of lakes,
+                    resulting from the erosion of the great Quaternary glaciers, radiates around the two Encantats, the
+                    twin peaks that gave their name to the massif.
+                    Ideal Pyrenees dreamed up by hikers, a veritable lakeside Eden, studded with blue confetti
+                    of variable size (the largest resemble small inland seas), this
+                    exceptional concentration of lakes has no other equivalent in Europe.
+                    Unique ! Magical ! Superlatives abound!</li>
+                  <li> The <b>Luchonnais</b> (Hospice de France, Port de Venasque, Lys Valley…) </li>
+                  <li> The <b>Aneto Massif</b> (highest peak in the Pyrenees, 3,404 m) </li>
+                </ul>
+                </p>
+
+              </div>
+
+              <div class="section-block">
+                <div class="pictures">
+                  <img src="assets/activities/boom.jpeg">
+                  <img src="assets/activities/crabere.jpeg">
+                </div>
+              </div>
+
+              <a class="bottom-link" href="#activities">
+                <svg style="width: 20px; height: 20px; fill: white;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-up"></use>
+                </svg>
+                <br>
+                Return
+              </a>
+              <br><br>
+              <a class="bottom-link" href="#winter">
+                Winter sports<br>
+                <svg style="width: 20px; height: 20px; fill: white;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use>
+                </svg>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide winter-->
+  <section class="slide fade-6 kenBurns" data-name="winter">
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="wallpaper-overlay"></div>
+          <div class="body">
+            <div class="presentation">
+              <div class="section-block">
+                <h3 style="text-align: left;"> ⛷ Winter sports </h3>
+                <br>
+                <p class="text">Skiing, snowshoeing, sledding, cross-country skiing, ski touring…</p>
+                <p class="text">
+
+                <ul>
+                  <li> <b>Le Mourtis</b> at 20 min </li>
+                  <li> <b>Peyragudes</b> at 38 min </li>
+                  <li> <b>Superbagnères</b> at 49 min </li>
+                  <li> <b>Baqueira-Beret</b> (Spain) 46 min away, second largest Pyrenean ski resort with 167
+                    km of slopes! </li>
+                </ul>
+                </p>
+
+              </div>
+
+              <div class="section-block">
+                <div class="pictures">
+                  <img src="assets/activities/baqueira.jpeg">
+                  <img src="assets/activities/mourtis.jpg">
+                </div>
+              </div>
+
+              <a class="bottom-link" href="#activities">
+                <svg style="width: 20px; height: 20px; fill: white;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-up"></use>
+                </svg>
+                <br>
+                Return
+              </a>
+              <br><br>
+              <a class="bottom-link" href="#otheractivities">
+                Other activities<br>
+                <svg style="width: 20px; height: 20px; fill: white;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use>
+                </svg>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide otheractivities-->
+  <section class="slide fade-6 kenBurns" data-name="otheractivities">
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="wallpaper-overlay"></div>
+          <div class="body">
+            <div class="presentation">
+
+              <div class="section-block">
+                <h3 style="text-align: left;"> 🧗🏻‍♀️ Others activities</h3>
+                <br>
+                <p class="text">There are many activities, something to have fun with family, friends or as a couple
+                  !</p>
+                <p class="text">
+
+                <ul>
+                  <li> In Arlos itself, <b>canyoning</b> </li>
+                  <li> In Melles, take an excursion <b><a target="_blank" href="https://paysdelours.com">with
+                        the Pays de l'Ours association to discover the Bear by exploring its tracks!</a></b> </li>
+                  <li> In Arlos itself, <b>MTB</b> on the Transgarona which passes in front of us towards St Béat or Fos
+                    to Spain! The Transgarona is a cycle path linking Toulouse to Spain!</li>
+                  <li> 6 min (Saint-Béat) from <b><a target="_blank" href="https://www.h2o-vives.com">rafting</a></b>
+                  </li>
+                  <li> 15 min (Cierp-Gaud) from <b>climbing</b> and <b>tree climbing</b> at <a target="_blank"
+                      href="https://www.pyrenees-ho.com/en">Pyrenees Ho</a>
+                  <li> 20 min from the <b>MTB</b> trails in Le Mourtis </li>
+                  <li> 26 min (Bagnères-de-Luchon) from <b>caving</b>, <b><a target="_blank"
+                        href="https://www.paraddict-luchon.com">paragliding in tandem with Thomas</a></b> and even some
+                    <b><a target="_blank" href="https://www.mobilboard.com/fr/agence/segway/luchon">segway</a></b>
+                    All Terrain.
+                  </li>
+                  <li> 20 min away (Antignac) <b><a target="_blank" href="http://www.lesviviersducomminges.com">The
+                        fishponds
+                        from
+                        Comminges</a></b>, the Antignac fish farm offers organic and traditional trout farming,
+                    where you can fish with your family or buy trout!
+                  </li>
+                  <li> 14 minutes away, the <b>thermal baths of Les</b> in Spain</li>
+                  <li> Less than an hour away, a little further but grandiose, the <b><a target="_blank"
+                        href="https://www.balnea.fr">Balnéa thermal baths</a></b> in Loudenvielle with
+                    the famous outdoor Japanese bath, open in all seasons</li>
+                </ul>
+                </p>
+
+              </div>
+
+              <div class="section-block">
+                <div class="pictures">
+                  <img src="assets/activities/parapente.jpeg">
+                  <img src="assets/activities/balnea.jpg">
+                </div>
+              </div>
+
+              <a class="bottom-link" href="#activities">
+                <svg style="width: 20px; height: 20px; fill: white;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-up"></use>
+                </svg>
+                <br>
+                Return
+              </a>
+              <br><br>
+              <a class="bottom-link" href="#ourstory">
+                Our story<br>
+                <svg style="width: 20px; height: 20px; fill: white;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-down"></use>
+                </svg>
+              </a>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide ourstory-->
+  <section class="slide fade-6 kenBurns" data-name="ourstory">
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+          <div class="wallpaper-overlay"></div>
+          <div class="body">
+            <div class="presentation">
+              <h1> Welcome home! </h1>
+
+              <div class="section-block">
+                <div class="photo" style="background-image: url(../assets/us.jpg);"></div>
+                <p class="text">
+                  <br>
+                  <br>
+                  We are Anna and Mathieu!
+                  Originally from Toulouse and lovers of the Pyrenees which allowed us to escape on weekends,
+                  we decided to live there
+                  to enjoy it on a daily basis, far from the urban bustle.
+                  Return to a simpler life: gardening, cooking, enjoying nature and sharing our passion
+                  for the mountains!
+                  <br><br>
+                  Subscribe to our <a href="#news">newsletter</a> to follow our news.
+                </p>
+              </div>
+              <div class="divider"></div>
+              <div class="section-block">
+                <div class="pictures">
+                  <img src="assets/ourstory/toulouse.jpg">
+                  <img src="assets/ourstory/garona.jpg">
+                </div>
+                <p class="text" style="font-style: italic;">Going back to the source, for us it's not just a metaphor !
+                  We go up
+                  our Garonne river from Toulouse to Arlos!</p>
+              </div>
+
+              <div class="section-block">
+                <h2> Our values ​​</h2>
+                <br>
+                <p class="text">
+                  Our eco-responsible guest house is closely linked with this desire to
+                  nature
+                  and the preservation of our environment.
+                  <br>
+                  <br>
+                  The most important thing for us is to participate in the local economy, hand in hand with the
+                  valley producers.
+                  With us you will taste beers from local breweries, honeys and cheeses from Comminges, organic flour
+                  our homemade bread and local meats (beef, lamb, veal).
+                  For example, our beef comes from our neighbor and breeder Jean-François, his cows
+                  climb in summer to the mountain pasture of Mourtis, a stone's throw from our house!
+                  This is why we cook only seasonal products, the most local and ethical.
+                  possible, in search of the biological. Our vegetable garden allows us to produce our own vegetables
+                  greedy
+                  and
+                  could not be more local. Being flexitarians we offer meals for all diets
+                  food (vegetarian, vegan, vegan, gluten-free...)
+                  <br>
+                  <br>
+                  The cleaning of the house is done with homemade household products as much as possible with
+                  environmentally friendly ingredients.
+                  <br>
+                  <br>
+                  Our reasoned energy comes from <a target="_blank"
+                    href="https://www.ilek.fr/producer-offer/133-hydroelectricity-de-rebouc">an energy distributor
+                    green and local</a>
+                  (precisely
+                  of the Rebouc hydroelectric dam in the Hautes-Pyrénées, 30 km as the crow flies from Arlos) and we
+                  we heat with local wood!
+                  <br><br>
+                  We are moving towards zero waste, thanks in particular to compost, bulk purchase and homemade
+                  until
+                  household products !
+                  <br><br>
+                  When you come, do not hesitate to discuss it with us if you want to know more about our
+                  eco-responsible approach!
+
+                </p>
+              </div>
+
+              <a class="bottom-link" href="#home">
+                <svg style="width: 20px; height: 20px; fill: white;">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#arrow-up"></use>
+                </svg>
+                <br>
+                Home
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slide terms-->
+  <section class="slide fade-6 kenBurns" data-name="terms">
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+
+          <div class="fix-7-12">
+            <h1 class="smaller margin-bottom-2 ae-1">Terms and Conditions</h1>
+
+            <p class="large ae-2">
+              <span class="opacity-8">
+                <b>Booking</b><br><br>
+                Your booking will be effective upon receipt of a
+                deposit payment corresponding to 50% of the total amount of your stay. The balance of your stay will be
+                at
+                pay on the day of your departure by credit card, bank transfer or cash. We do not accept
+                checks.<br><br>
+                <b>Cancellation</b><br><br>
+                In case of withdrawal on your part, less than 7 days before the start of the stay, we keep the
+                deposit. If applicable, we will refund the deposit less the 2.5% commission from our service provider
+                SumUp payment. It is also possible to offer a credit note for the stay
+                later.<br><br>
+                <b>Shortened stay</b><br><br>
+                In this case, the total amount of the stay remains due.<br><br>
+                <b>Arrivals</b><br><br>
+                We welcome you between 5 and 7 p.m. For any arrival outside this time slot,
+                please let us know.
+                On the day of your departure, the room must be vacated by 11 a.m. at the latest.<br><br>
+                <b>Liability</b><br><br>
+                The host is liable for all damages caused by him. We can request a
+                compensation in the event of damage to the premises. Smoking (including cigarettes) is prohibited
+                electronics) and to eat in our rooms. Thank you for throwing your waste in the bins of the room
+                bath or toilet provided for this purpose.
+                Our guesthouse nis not planned to organize parties but we can organize on request
+                evenings (birthday, New Year's Eve for example with special menus offered for these
+                occasions).<br><br>
+                <b>Tourist tax</b><br><br>
+                Our price includes the tourist tax of 0.65€/person/night.<br><br>
+                <b>Your reservation is valid for acceptance of the general conditions of sale.</b><br><br>
+
+
+              </span>
+            </p>
+
+            <h1 class="smaller margin-bottom-2 ae-1">Terms of Service</h1>
+
+            <p class="large ae-2">
+              <span class="opacity-8">
+                These general conditions govern the use of this site maisondarlos.fr
+                <br><br>
+                This site is owned and operated by Mathieu Vandeginste & Anna Giboin<br>By using this site, you
+                indicate that you
+                have read and understood the terms of use and that you agree to abide by them in all
+                time.<br><br>Type of site: showcase
+                <br><br>Intellectual property<br><br>All content published and made available on this site is the
+                property of Mathieu Vandeginste and its creators. This includes, but is not limited to images,
+                texts, logos, documents, downloadable files and everything that contributes to the composition of this
+                site.
+                <br><br>Limitation of liability<br><br>Mathieu Vandeginste or Anna Giboin will be held
+                responsible for any problems arising from this site. Nevertheless, Mathieu Vandeginste and Anna Giboin
+                will not be held responsible for any problems arising from any irregular use of this site.
+                <br><br>
+                Indemnity<br><br>As a user, you hereby indemnify Mathieu Vandeginste from any
+                liability, cost, cause of action, damage or expense arising out of
+                your use of this site or your breach of any of the provisions set forth herein
+                document.
+                <br><br>
+                Applicable laws<br><br>This document is subject to the laws applicable in France and is intended to
+                comply with
+                its necessary rules and regulations. This includes the EU-wide regulations set out in the
+                GDPR.
+                <br><br>
+                Severability<br><br>If at any time any of the provisions set forth herein is
+                found to be inconsistent or invalid under applicable law, such provisions shall be deemed
+                void and will be removed from this document. All other provisions shall remain unaffected by
+                laws and the rest of the document will still be considered valid.
+                <br><br>
+                Amendments<br><br>These terms and conditions may be amended from time to time in order to maintain
+                compliance with the law and to reflect any changes to the way we run our site and the way
+                which we expect users to behave on our site. We recommend to our
+                users to check these terms and conditions from time to time to ensure that they are informed
+                of any updates. If necessary, we will notify users by email of the changes made.
+                these terms or we will post a notice on our site.
+                <br><br>
+                Contact<br><br>Please contact us if you have any questions or concerns. Our
+                contact details are as follows:<br><br>(+33) 06 99 00 64 61<br><br>contact@maisonsarlos.fr<br><br>8
+                Lano
+                from Above, 31440 ARLOS
+                <br><br>Effective date: February 17, 2021.
+              </span>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="background" style="background-image:url(assets/uploads/bg.jpg?p=wETz9fWx)"></div>
+
+  </section>
+
+  <!-- Slide privacy -->
+  <section class="slide fade-6 kenBurns" data-name="privacy">
+    <div class="content">
+      <div class="container">
+        <div class="wrap">
+
+          <div class="fix-7-12">
+            <h1 class="smaller margin-bottom-2 ae-1">Privacy Policy</h1>
+
+            <p class="large ae-2">
+              <span class="opacity-8">
+
+                maisondarlos.fr
+                <br><br>
+                Anna Giboin & Mathieu Vandeginste
+                <br><br>
+                The purpose of this privacy policy is to inform users of our site of the data
+                that we will collect as well as the following information, if applicable:<br><br>The personal data we
+                will collect<br><br>
+                Use of collected data<br><br>
+                Who has access to the data collected<br><br>The rights of site users<br><br>The privacy policy
+                site cookies<br><br>This Privacy Policy operates in conjunction with the Terms
+                terms of use of our site.
+                <br><br>Applicable laws
+                <br><br>In accordance with the General Data Protection Regulation (GDPR), this Privacy Policy
+                confidentiality complies with the following regulations.
+                <br><br>Personal data must be: <br><br> - processed lawfully, fairly
+                and transparent with regard to the data subject (lawfulness, fairness, transparency);<br><br>
+                - collected for specific, explicit and legitimate purposes and not to be processed
+                subsequently in a manner incompatible with those purposes; further processing for the purposes
+                archives in the public interest, for scientific or historical research purposes or for
+                statistics is not considered, in accordance with Article 89(1), to be incompatible with the
+                original purposes (purpose limitation);
+                <br><br>
+                - adequate, relevant and limited to what is necessary in relation to the purposes for which
+                they are processed (data minimization); accurate and, where necessary, kept up to date; all the
+                reasonable steps should be taken to ensure that personal data which is inaccurate,
+                having regard to the purposes for which they are processed, are erased or rectified without delay
+                (exactness) ; kept in a form allowing the identification of the persons concerned during
+                a duration not exceeding that necessary with regard to the purposes for which they are processed;
+                personal data may be retained for longer periods insofar as
+                they will be processed exclusively for archival purposes in the public interest, for the purposes of
+                scientific or historical research or for statistical purposes in accordance with Article 89, paragraph
+                1, provided that appropriate technical and organizational measures are implemented
+                required by the regulation in order to guarantee the rights and freedoms of the data subject (limitation
+                preservation); <br><br>
+                - processed in such a way as to ensure appropriate security of personal data, including the
+                protection against unauthorized or unlawful processing and against loss, destruction or
+                accidental damage, using appropriate technical or organizational measures
+                (integrity and confidentiality).
+                <br><br> Processing is only lawful if and insofar as at least one of the following conditions
+                is fulfilled:
+                <br><br> - the data subject has consented to the processing of his or her personal data for a
+                or more specific purposes;<br><br>
+                - processing is necessary for the performance of a contract to which the data subject is a party or to
+                the execution of pre-contractual measures taken at the latter's request;
+                <br><br>
+                - processing is necessary for compliance with a legal obligation to which the data controller
+                treatment is submitted;
+                <br><br> - processing is necessary to protect the vital interests of the data subject or
+                of another natural person;
+                <br><br>- processing is necessary for the performance of a task carried out in the public interest or
+                falling within the
+                the exercise of official authority vested in the controller;<br><br>
+                - processing is necessary for the purposes of the legitimate interests pursued by the data controller
+                processing or by a third party, unless the interests or fundamental rights and freedoms prevail
+                of the data subject which require protection of personal data, in particular when
+                the data subject is a child.<br><br>
+                For residents of the State of California, this Privacy Policy is intended to comply with the
+                <span style="font-style:italic;font-weight:normal;">California Consumer Privacy Act (CCPA)</span>. If he
+                there are inconsistencies between this document and the
+                <spanstyle="font-style:italic;font-weight:normal;">CCPA
+              </span>, state law will apply. Whether
+              we find inconsistencies, we will change our policy to comply with the law
+              relevant.
+              <br><br>Consent<br><br>Users agree that by using our site, they consent to the
+              terms set forth in this Privacy Policy and the collection, use and
+              retention of the data listed in this policy.
+              <br><br> Personal data we collect
+              <br><br> We do not collect, store or use any user data on our site. In
+              in the event that we need to collect your data, we will make sure to provide you with advance notice of
+              this
+              data collection.
+              <br><br> Changes
+              <br><br>This Privacy Policy may be amended from time to time in order to maintain the
+              compliance with the law and to take into account any changes to our data collection process.
+              We recommend that our users check our policy from time to time to ensure that they
+              be informed of any updates. If necessary, we can inform users by e-mail of
+              changes to this policy.
+              <br><br>Contact
+              <br><br>If you have any questions, please feel free to contact us using this
+              the following:<br>(+33) 06 99 00 64 61<br>contact@maisondarlos.fr<br>8 La Lano de Dessus, 31440 ARLOS
+              <br><br>Effective date: February 17, 2021
+
+
+              </span>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="background" style="background-image:url(assets/uploads/bg.jpg?p=wETz9fWx)"></div>
+
+  </section>
+
   <!-- Panel Bottom -->
   <nav class="panel bottom forceMobileView">
-    <div class="sections desktop">
+    <div class="desktop sections">
       <div class="left"></div>
       <div class="center">
-        <ul class="menu uppercase">
-          <li><a href="/home-es">Bienvenida</a></li>
-          <li><a href="mailto:contact@maisondarlos.fr">Contacto</a></li>
-          <li><a href="/home-es/#news">News</a></li>
-          <li><a href="/terms-es">Condiciones</a></li>
-          <li><a href=/privacy-es>Confidentialidad</a></li>
+        <ul class="uppercase menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="mailto:contact@maisondarlos.fr">Contact</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#terms">CGV/CGU</a></li>
+          <li><a href=#privacy>Privacy</a></li>
           <li></li><a href="https://www.pyrenees31.com/dormir/dormir-maison-darlos/"><img width="100" height="30"
               src="/assets/pyrenees31.svg"> </svg></a></li>
-          <li><a href="https://www.hautegaronnetourisme.com/hebergements/maison-dhotes-ecoresponsable-darlos/"><img
+          <li><a href="https://www.hautegaronnetourisme.com/accommodations/maison-dhotes-ecoresponsable-darlos/"><img
                 width="100" height="30" src="/assets/hg.svg"> </svg></a></li>
         </ul>
       </div>
@@ -374,7 +1664,7 @@
   </nav>
 
   <!-- Share Window -->
-  <div class="dropdown share bottom right" data-dropdown-id="2" data-text="¡Te recomiendo que visites este sitio!"
+  <div class="dropdown share bottom right" data-dropdown-id="2" data-text="I recommend you visit this site!"
     data-url="https://maisondarlos.fr"
     data-pinterest-image="https://designmodo.com/wp-content/uploads/2015/10/Presentation.jpg">
     <div class="center padding-2">
@@ -387,8 +1677,8 @@
       <li class="social-twitter"><svg>
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#twitter"></use>
         </svg></li>
-      <li class="mail" data-subject="Casa eco-responsable en Arlos" data-body="¡Te recomiendo que visites este sitio!">
-        Compartir por correo electrónico</li>
+      <li class="mail" data-subject="Casa de huéspedes en Arlos" data-body="¡Te recomiendo que visites este sitio!">
+        compartir por correo electrónico</li>
     </ul>
   </div>
 
@@ -398,6 +1688,7 @@
   <!-- Compressed Scripts -->
   <script src="/js/min.js" defer></script>
   <script src="/js/main.js" defer></script>
+  <script src="/js/maps.js" defer></script>
 </body>
 
 </html>
