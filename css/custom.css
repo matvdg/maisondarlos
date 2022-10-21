@@ -53,10 +53,10 @@ h3 {
 /* Loader */
 #loader {
   position: fixed;
-  top: calc(50% - 50px);
-  left: calc(50% - 50px);
-  height: 100px;
-  width: 100px;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
+  height: 200px;
+  width: 200px;
   z-index: 9999;
 }
 #overlay {
