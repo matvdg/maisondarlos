@@ -1,9 +1,9 @@
 // Setting properties on creation:
-var homeAnnotation = new MarkerAnnotation(home, {
+/*var homeAnnotation = new MarkerAnnotation(home, {
   color: "#26406D",
   title: "Maison d'Arlos",
   glyphImage: { 1: "assets/logo.png" },
-})
+})*/
 
 // LEAFLET
 
