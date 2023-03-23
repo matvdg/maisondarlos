@@ -1,16 +1,3 @@
-var MarkerAnnotation = mapkit.MarkerAnnotation,
-  clickAnnotation
-var home = new mapkit.Coordinate(42.893374, 0.69989)
-
-mapkit.init({
-  authorizationCallback: function (done) {
-    done(
-      "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkRITkMzU1NRODQifQ.eyJpc3MiOiIzV0FRRjNBUzgyIiwiaWF0IjoxNjQ3OTA2NDE3LCJleHAiOjE2NzkzNTY4MDAsIm9yaWdpbiI6Imh0dHBzOi8vbWFpc29uZGFybG9zLmZyIn0.oXuxIu_m41vQa1kqnsgaWbn0AMxO6-3j_r1owsI6ph04DJLWqdPTkCxPvQ-N3CIDFLAnm4a21I2MEaO88Ov2qg"
-    )
-  },
-})
-var map = new mapkit.Map("map")
-
 // Setting properties on creation:
 var homeAnnotation = new MarkerAnnotation(home, {
   color: "#26406D",
@@ -18,11 +5,27 @@ var homeAnnotation = new MarkerAnnotation(home, {
   glyphImage: { 1: "assets/logo.png" },
 })
 
-// Add and show both annotations on the map
-map.showItems([homeAnnotation])
+// LEAFLET
 
-// Configure mapView
-//map.mapType = mapkit.Map.MapTypes.Hybrid
-var span = new mapkit.CoordinateSpan(0.16, 0.16),
-  region = new mapkit.CoordinateRegion(home, span)
-map.region = region
+// On initialise la latitude et la longitude d'Arlos (centre de la carte)
+var lat = 42.893374
+var lon = 0.69989
+var macarte = null
+// Nous ajoutons un marqueur
+
+L.lat
+// Fonction d'initialisation de la carte
+function initMap() {
+  // Créer l'objet "macarte" et l'insèrer dans l'élément HTML qui a l'ID "map"
+  macarte = L.map("map").setView([lat, lon], 11)
+  // Leaflet ne récupère pas les cartes (tiles) sur un serveur par défaut. Nous devons lui préciser où nous souhaitons les récupérer. Ici, openstreetmap.fr
+  L.tileLayer("https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png", {
+    minZoom: 1,
+    maxZoom: 20,
+  }).addTo(macarte)
+  var marker = L.marker([lat, lon]).addTo(macarte)
+}
+window.onload = function () {
+  // Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
+  initMap()
+}
