@@ -21,7 +21,7 @@ function initMap() {
   // Leaflet ne récupère pas les cartes (tiles) sur un serveur par défaut. Nous devons lui préciser où nous souhaitons les récupérer. Ici, openstreetmap.fr
   L.tileLayer("https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png", {
     minZoom: 1,
-    maxZoom: 20,
+    maxZoom: 10,
   }).addTo(macarte)
   var marker = L.marker([lat, lon]).addTo(macarte)
 }
